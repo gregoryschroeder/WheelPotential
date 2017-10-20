@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE01F85B17500A18A8C /* AppDelegate.swift */; };
-		0D4EFAE31F85B17500A18A8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE21F85B17500A18A8C /* ViewController.swift */; };
 		0D4EFAE61F85B17500A18A8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE41F85B17500A18A8C /* Main.storyboard */; };
 		0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE71F85B17500A18A8C /* WheelPotential.xcdatamodeld */; };
 		0D4EFAEB1F85B17500A18A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */; };
 		0D4EFAEE1F85B17500A18A8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAEC1F85B17500A18A8C /* LaunchScreen.storyboard */; };
 		0D4EFAF91F85B17500A18A8C /* WheelPotentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAF81F85B17500A18A8C /* WheelPotentialTests.swift */; };
 		0D4EFB041F85B17500A18A8C /* WheelPotentialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */; };
+		0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB121F85B21400A18A8C /* WheelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		0D4EFADD1F85B17500A18A8C /* WheelPotential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelPotential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4EFAE01F85B17500A18A8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D4EFAE21F85B17500A18A8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D4EFAE51F85B17500A18A8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D4EFAE81F85B17500A18A8C /* WheelPotential.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheelPotential.xcdatamodel; sourceTree = "<group>"; };
 		0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		0D4EFAFF1F85B17500A18A8C /* WheelPotentialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelPotentialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPotentialUITests.swift; sourceTree = "<group>"; };
 		0D4EFB051F85B17500A18A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4EFB121F85B21400A18A8C /* WheelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0D4EFB111F85B1F900A18A8C /* Wheel */,
 				0D4EFAE01F85B17500A18A8C /* AppDelegate.swift */,
-				0D4EFAE21F85B17500A18A8C /* ViewController.swift */,
 				0D4EFAE41F85B17500A18A8C /* Main.storyboard */,
 				0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */,
 				0D4EFAEC1F85B17500A18A8C /* LaunchScreen.storyboard */,
@@ -126,6 +126,14 @@
 				0D4EFB051F85B17500A18A8C /* Info.plist */,
 			);
 			path = WheelPotentialUITests;
+			sourceTree = "<group>";
+		};
+		0D4EFB111F85B1F900A18A8C /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				0D4EFB121F85B21400A18A8C /* WheelVC.swift */,
+			);
+			path = Wheel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
-				0D4EFAE31F85B17500A18A8C /* ViewController.swift in Sources */,
+				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
 				0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
