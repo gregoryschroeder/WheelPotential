@@ -17,6 +17,10 @@
 		0D4EFAF91F85B17500A18A8C /* WheelPotentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAF81F85B17500A18A8C /* WheelPotentialTests.swift */; };
 		0D4EFB041F85B17500A18A8C /* WheelPotentialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */; };
 		0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB121F85B21400A18A8C /* WheelVC.swift */; };
+		0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081A91F9B6EC400849AEA /* Words.swift */; };
+		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
+		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
+		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPotentialUITests.swift; sourceTree = "<group>"; };
 		0D4EFB051F85B17500A18A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4EFB121F85B21400A18A8C /* WheelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelVC.swift; sourceTree = "<group>"; };
+		0DA081A91F9B6EC400849AEA /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
+		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,9 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0DA081B11F9B848200849AEA /* Extensions */,
+				0DA081AC1F9B751100849AEA /* Protocols */,
+				0DA081AB1F9B726C00849AEA /* Enums */,
 				0D30D2EA1F9AADCA00609DCE /* Global */,
 				0D4EFB111F85B1F900A18A8C /* Wheel */,
 				0D4EFAE41F85B17500A18A8C /* Main.storyboard */,
@@ -146,8 +157,33 @@
 			isa = PBXGroup;
 			children = (
 				0D4EFB121F85B21400A18A8C /* WheelVC.swift */,
+				0DA081AF1F9B76D000849AEA /* WordCell.swift */,
 			);
 			path = Wheel;
+			sourceTree = "<group>";
+		};
+		0DA081AB1F9B726C00849AEA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0DA081A91F9B6EC400849AEA /* Words.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0DA081AC1F9B751100849AEA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0DA081AD1F9B752100849AEA /* CaseCount.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0DA081B11F9B848200849AEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DA081B21F9B849100849AEA /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */,
 				0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */,
+				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
+				0DA081B31F9B849100849AEA /* UIColor.swift in Sources */,
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
+				0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */,
 				0D30D2EE1F9AB0D900609DCE /* Globals.swift in Sources */,
 				0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */,
 			);
