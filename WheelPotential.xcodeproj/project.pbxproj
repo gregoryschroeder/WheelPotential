@@ -21,6 +21,7 @@
 		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
 		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
+		0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0DC3A1091F9BC00C0049108C /* Definition */,
 				0DA081B11F9B848200849AEA /* Extensions */,
 				0DA081AC1F9B751100849AEA /* Protocols */,
 				0DA081AB1F9B726C00849AEA /* Enums */,
@@ -184,6 +187,14 @@
 				0DA081B21F9B849100849AEA /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DC3A1091F9BC00C0049108C /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */,
+			);
+			path = Definition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
 				0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */,
 				0D30D2EE1F9AB0D900609DCE /* Globals.swift in Sources */,
+				0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */,
 				0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
