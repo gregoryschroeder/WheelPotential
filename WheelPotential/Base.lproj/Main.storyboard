@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-lE-zwR">
-                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-lE-zwR">
+                                <rect key="frame" x="16" y="157" width="343" height="353"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="343" id="1AD-Aj-pzx"/>
+                                    <constraint firstAttribute="height" constant="353" id="1AD-Aj-pzx"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -77,18 +77,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-sn-iTL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-H6-oWJ">
+                                <rect key="frame" x="16" y="447" width="343" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-sn-iTL">
                                 <rect key="frame" x="16" y="447" width="343" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="mbT-An-wmG"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="App Store"/>
+                                <connections>
+                                    <action selector="WheelButtonClick" destination="Kim-zA-cJd" eventType="touchUpInside" id="odM-vB-zg5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wbB-sn-iTL" firstAttribute="top" secondItem="76B-RA-HOA" secondAttribute="bottom" constant="8" id="3zk-Nq-5El"/>
+                            <constraint firstItem="2bA-H6-oWJ" firstAttribute="leading" secondItem="wbB-sn-iTL" secondAttribute="leading" id="4KC-GV-9PM"/>
+                            <constraint firstItem="2bA-H6-oWJ" firstAttribute="bottom" secondItem="wbB-sn-iTL" secondAttribute="bottom" id="9Ch-jN-dVC"/>
                             <constraint firstItem="wbB-sn-iTL" firstAttribute="leading" secondItem="PVg-nv-Vle" secondAttribute="leading" constant="16" id="DTb-hO-eo3"/>
+                            <constraint firstItem="2bA-H6-oWJ" firstAttribute="trailing" secondItem="wbB-sn-iTL" secondAttribute="trailing" id="E9n-D6-Wij"/>
+                            <constraint firstItem="2bA-H6-oWJ" firstAttribute="top" secondItem="wbB-sn-iTL" secondAttribute="top" id="EWE-Wb-8Zf"/>
                             <constraint firstItem="PVg-nv-Vle" firstAttribute="trailing" secondItem="wbB-sn-iTL" secondAttribute="trailing" constant="16" id="GYI-h3-g84"/>
                             <constraint firstItem="PVg-nv-Vle" firstAttribute="bottom" secondItem="wbB-sn-iTL" secondAttribute="bottom" constant="20" id="Hlp-H2-eSw"/>
                             <constraint firstItem="76B-RA-HOA" firstAttribute="trailing" secondItem="6i9-5H-88l" secondAttribute="trailingMargin" id="MMR-iz-g2F"/>
@@ -99,7 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="myTableView" destination="76B-RA-HOA" id="voo-KI-a1z"/>
-                        <segue destination="pKb-Pb-uhF" kind="show" id="9J5-aN-aAH"/>
+                        <segue destination="pKb-Pb-uhF" kind="show" identifier="WheelDefinitionSegue" id="9J5-aN-aAH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijo-rf-HJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,6 +125,22 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyK-1B-BKs">
                                 <rect key="frame" x="16" y="20" width="343" height="589"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJU-F0-oaz" userLabel="Definition">
+                                        <rect key="frame" x="8" y="8" width="327" height="573"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="leading" secondItem="UyK-1B-BKs" secondAttribute="leadingMargin" id="DkK-DZ-PsL"/>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="centerX" secondItem="UyK-1B-BKs" secondAttribute="centerX" id="LeE-HM-kNe"/>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="top" secondItem="UyK-1B-BKs" secondAttribute="topMargin" id="V3X-bX-jQT"/>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="centerY" secondItem="UyK-1B-BKs" secondAttribute="centerY" id="ebW-hu-Vms"/>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="bottom" secondItem="UyK-1B-BKs" secondAttribute="bottomMargin" id="hV2-di-OZy"/>
+                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="trailing" secondItem="UyK-1B-BKs" secondAttribute="trailingMargin" id="xwd-s2-xEr"/>
+                                </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IK-w8-Qon">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
@@ -138,6 +163,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y4P-Xk-Wp1"/>
                     </view>
+                    <connections>
+                        <outlet property="DefinitionLabel" destination="PJU-F0-oaz" id="MtY-gc-2Al"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akb-xQ-I9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

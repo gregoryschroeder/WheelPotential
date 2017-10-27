@@ -11,6 +11,7 @@ import UIKit
 class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTableView: UITableView!
+    var selectedWord: Words?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,24 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         myTableView.delegate = self
         self.myTableView.reloadData()
     }
+    
+    // MARK: - Navigation
+    
+    
+    @IBAction func WheelButtonClick() {
+        if let _ = selectedWord {
+            performSegue(withIdentifier: "WheelDefinitionSegue", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is DefinitionVC {
+            let vc = segue.destination as? DefinitionVC
+            vc?.selectedWord = self.selectedWord
+        }
+    }
+    
+    // MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Words.caseCount
@@ -38,5 +57,9 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedWord = Words(rawValue: indexPath.row)
     }
 }

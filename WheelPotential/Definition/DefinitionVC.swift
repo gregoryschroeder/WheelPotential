@@ -10,9 +10,15 @@ import UIKit
 
 class DefinitionVC: UIViewController {
 
+    @IBOutlet weak var DefinitionLabel: UILabel!
+    var selectedWord: Words?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let word = selectedWord?.name {
+            DefinitionLabel.text = word
+        }
         // Do any additional setup after loading the view.
     }
 
