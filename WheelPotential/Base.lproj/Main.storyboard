@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kim-zA-cJd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3Y-KL-acV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,33 +10,67 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Anxiety View Controller-->
         <scene sceneID="gPb-R3-aRP">
             <objects>
-                <viewController id="g3Y-KL-acV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnxietyViewController" title="Anxiety View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g3Y-KL-acV" customClass="AnxietyVC" customModule="WheelPotential" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bjo-W1-lxS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-lE-zwR">
-                                <rect key="frame" x="16" y="157" width="343" height="353"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-lE-zwR">
+                                <rect key="frame" x="16" y="0.0" width="343" height="353"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="353" id="1AD-Aj-pzx"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need to put text in here to get the user to define their anxiety. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb">
+                                <rect key="frame" x="16" y="332" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="m4y-A2-Ywo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-bU-POB">
+                                <rect key="frame" x="145" y="547" width="84" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="7wX-E9-SaH"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZvR-BS-pfo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <state key="normal" title="GO!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="GoButtonPress" destination="g3Y-KL-acV" eventType="touchUpInside" id="R2H-aV-v2p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vBe-lE-zwR" firstAttribute="centerY" secondItem="bjo-W1-lxS" secondAttribute="centerY" id="3Xv-1K-qtJ"/>
+                            <constraint firstItem="vBe-lE-zwR" firstAttribute="centerY" secondItem="bjo-W1-lxS" secondAttribute="centerY" constant="-157" id="3Xv-1K-qtJ"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="bottom" constant="20" id="6p8-tA-lSf"/>
+                            <constraint firstItem="i3L-yv-sUb" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="FXq-gV-Oiu"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="vBe-lE-zwR" secondAttribute="trailing" constant="16" id="Mpf-mw-Eb4"/>
+                            <constraint firstItem="bp3-bU-POB" firstAttribute="centerX" secondItem="bjo-W1-lxS" secondAttribute="centerX" id="QmQ-7G-sGB"/>
+                            <constraint firstItem="i3L-yv-sUb" firstAttribute="top" secondItem="vBe-lE-zwR" secondAttribute="bottom" constant="-21" id="YLJ-iC-Nyk"/>
                             <constraint firstItem="vBe-lE-zwR" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="ZYD-bE-ELL"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="i3L-yv-sUb" secondAttribute="trailing" constant="16" id="yAN-dc-BZQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
+                    <connections>
+                        <segue destination="Kim-zA-cJd" kind="show" identifier="AnxietySegue" id="YUi-0e-kH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F6-uC-vBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-928.79999999999995" y="-90.404797601199405"/>
+            <point key="canvasLocation" x="-1218.4000000000001" y="-90.404797601199405"/>
         </scene>
         <!--WheelViewController-->
         <scene sceneID="9dW-xd-rqi">
@@ -46,20 +80,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="76B-RA-HOA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="76B-RA-HOA">
                                 <rect key="frame" x="16" y="20" width="343" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" id="vzE-cr-KEm" userLabel="Word Cell" customClass="WordCell" customModule="WheelPotential">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" rowHeight="43" id="vzE-cr-KEm" userLabel="Word Cell" customClass="WordCell" customModule="WheelPotential">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vzE-cr-KEm" id="3iA-Ta-X2m">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="42.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rip-yi-k6B" userLabel="Word">
                                                     <rect key="frame" x="8" y="8" width="327" height="28"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -77,18 +111,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-H6-oWJ">
-                                <rect key="frame" x="16" y="447" width="343" height="200"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-sn-iTL">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-sn-iTL" userLabel="Wheel Button">
                                 <rect key="frame" x="16" y="447" width="343" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="mbT-An-wmG"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="WheelButtonClick" destination="Kim-zA-cJd" eventType="touchUpInside" id="odM-vB-zg5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-H6-oWJ" userLabel="Wheel Image">
+                                <rect key="frame" x="16" y="447" width="343" height="200"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -107,6 +146,7 @@
                         <viewLayoutGuide key="safeArea" id="PVg-nv-Vle"/>
                     </view>
                     <connections>
+                        <outlet property="WheelButton" destination="wbB-sn-iTL" id="yW8-Do-IFT"/>
                         <outlet property="myTableView" destination="76B-RA-HOA" id="voo-KI-a1z"/>
                         <segue destination="pKb-Pb-uhF" kind="show" identifier="WheelDefinitionSegue" id="9J5-aN-aAH"/>
                     </connections>
@@ -123,23 +163,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyK-1B-BKs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyK-1B-BKs">
                                 <rect key="frame" x="16" y="20" width="343" height="589"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJU-F0-oaz" userLabel="Definition">
-                                        <rect key="frame" x="8" y="8" width="327" height="573"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJU-F0-oaz" userLabel="Definition">
+                                        <rect key="frame" x="151" y="8" width="42" height="573"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="leading" secondItem="UyK-1B-BKs" secondAttribute="leadingMargin" id="DkK-DZ-PsL"/>
+                                    <constraint firstAttribute="trailing" secondItem="PJU-F0-oaz" secondAttribute="trailing" constant="150" id="Jba-Ff-gpn"/>
                                     <constraint firstItem="PJU-F0-oaz" firstAttribute="centerX" secondItem="UyK-1B-BKs" secondAttribute="centerX" id="LeE-HM-kNe"/>
                                     <constraint firstItem="PJU-F0-oaz" firstAttribute="top" secondItem="UyK-1B-BKs" secondAttribute="topMargin" id="V3X-bX-jQT"/>
                                     <constraint firstItem="PJU-F0-oaz" firstAttribute="centerY" secondItem="UyK-1B-BKs" secondAttribute="centerY" id="ebW-hu-Vms"/>
                                     <constraint firstItem="PJU-F0-oaz" firstAttribute="bottom" secondItem="UyK-1B-BKs" secondAttribute="bottomMargin" id="hV2-di-OZy"/>
-                                    <constraint firstItem="PJU-F0-oaz" firstAttribute="trailing" secondItem="UyK-1B-BKs" secondAttribute="trailingMargin" id="xwd-s2-xEr"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IK-w8-Qon">
@@ -147,8 +186,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Wg3-bB-3R1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="Take Action!"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="Suggested Actions"/>
+                                <connections>
+                                    <action selector="SuggestedActionButtonPress:" destination="pKb-Pb-uhF" eventType="touchUpInside" id="DdD-dy-Zzq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,14 +207,30 @@
                     </view>
                     <connections>
                         <outlet property="DefinitionLabel" destination="PJU-F0-oaz" id="MtY-gc-2Al"/>
+                        <segue destination="QdK-L1-auK" kind="show" identifier="ActionsSegue" id="meV-pq-dRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akb-xQ-I9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="-90.404797601199405"/>
         </scene>
+        <!--ActionsVC-->
+        <scene sceneID="1dO-N2-fhr">
+            <objects>
+                <viewController storyboardIdentifier="ActionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QdK-L1-auK" customClass="ActionsVC" customModule="WheelPotential" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvT-8v-d9G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Z3T-DY-KbX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98f-6d-82l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="-90"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="App Store" width="1024" height="1024"/>
+        <image name="Wheel" width="1024" height="1024"/>
     </resources>
 </document>

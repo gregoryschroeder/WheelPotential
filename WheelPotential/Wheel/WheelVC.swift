@@ -11,6 +11,7 @@ import UIKit
 class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var WheelButton: UIButton!
     var selectedWord: Words?
     
     override func viewDidLoad() {
@@ -47,13 +48,16 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath) as! WordCell
-
+        
         if let wordText = Words(rawValue: indexPath.row)?.name {
             cell.Word.text = wordText
         }
         
         if let wordColor = Words(rawValue: indexPath.row)?.color {
-            cell.backgroundColor = UIColor(hexString: "#\(wordColor)FF")
+            cell.Word.textColor = UIColor(hexString: "#\(wordColor)FF")
+//            cell.layer.cornerRadius = 6
+//            cell.layer.borderWidth = 2
+//            cell.layer.borderColor = UIColor(hexString: "#\(wordColor)FF")?.cgColor
         }
         
         return cell
@@ -61,5 +65,9 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedWord = Words(rawValue: indexPath.row)
+        
+        if let wordColor = Words(rawValue: indexPath.row)?.color {
+            WheelButton.backgroundColor = UIColor(hexString: "#\(wordColor)FF")
+        }
     }
 }

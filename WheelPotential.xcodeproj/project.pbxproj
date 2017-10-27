@@ -13,10 +13,12 @@
 		0D4EFAE61F85B17500A18A8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE41F85B17500A18A8C /* Main.storyboard */; };
 		0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE71F85B17500A18A8C /* WheelPotential.xcdatamodeld */; };
 		0D4EFAEB1F85B17500A18A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */; };
-		0D4EFAEE1F85B17500A18A8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4EFAEC1F85B17500A18A8C /* LaunchScreen.storyboard */; };
 		0D4EFAF91F85B17500A18A8C /* WheelPotentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAF81F85B17500A18A8C /* WheelPotentialTests.swift */; };
 		0D4EFB041F85B17500A18A8C /* WheelPotentialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */; };
 		0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFB121F85B21400A18A8C /* WheelVC.swift */; };
+		0D56F9671FA2B85F001B180A /* ActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56F9661FA2B85F001B180A /* ActionsVC.swift */; };
+		0D56F9691FA2BF09001B180A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56F9681FA2BF09001B180A /* Launch Screen.storyboard */; };
+		0D56F96C1FA2C1A4001B180A /* AnxietyVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56F96B1FA2C1A4001B180A /* AnxietyVCViewController.swift */; };
 		0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081A91F9B6EC400849AEA /* Words.swift */; };
 		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
@@ -49,7 +51,6 @@
 		0D4EFAE51F85B17500A18A8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D4EFAE81F85B17500A18A8C /* WheelPotential.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheelPotential.xcdatamodel; sourceTree = "<group>"; };
 		0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D4EFAED1F85B17500A18A8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4EFAEF1F85B17500A18A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4EFAF41F85B17500A18A8C /* WheelPotentialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelPotentialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4EFAF81F85B17500A18A8C /* WheelPotentialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPotentialTests.swift; sourceTree = "<group>"; };
@@ -58,6 +59,9 @@
 		0D4EFB031F85B17500A18A8C /* WheelPotentialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPotentialUITests.swift; sourceTree = "<group>"; };
 		0D4EFB051F85B17500A18A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4EFB121F85B21400A18A8C /* WheelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelVC.swift; sourceTree = "<group>"; };
+		0D56F9661FA2B85F001B180A /* ActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsVC.swift; sourceTree = "<group>"; };
+		0D56F9681FA2BF09001B180A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0D56F96B1FA2C1A4001B180A /* AnxietyVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyVCViewController.swift; sourceTree = "<group>"; };
 		0DA081A91F9B6EC400849AEA /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0D56F96A1FA2C181001B180A /* Anxiety */,
+				0D56F9651FA2B84E001B180A /* Actions */,
 				0DC3A1091F9BC00C0049108C /* Definition */,
 				0DA081B11F9B848200849AEA /* Extensions */,
 				0DA081AC1F9B751100849AEA /* Protocols */,
@@ -131,9 +137,9 @@
 				0D4EFB111F85B1F900A18A8C /* Wheel */,
 				0D4EFAE41F85B17500A18A8C /* Main.storyboard */,
 				0D4EFAEA1F85B17500A18A8C /* Assets.xcassets */,
-				0D4EFAEC1F85B17500A18A8C /* LaunchScreen.storyboard */,
 				0D4EFAEF1F85B17500A18A8C /* Info.plist */,
 				0D4EFAE71F85B17500A18A8C /* WheelPotential.xcdatamodeld */,
+				0D56F9681FA2BF09001B180A /* Launch Screen.storyboard */,
 			);
 			path = WheelPotential;
 			sourceTree = "<group>";
@@ -163,6 +169,22 @@
 				0DA081AF1F9B76D000849AEA /* WordCell.swift */,
 			);
 			path = Wheel;
+			sourceTree = "<group>";
+		};
+		0D56F9651FA2B84E001B180A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0D56F9661FA2B85F001B180A /* ActionsVC.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		0D56F96A1FA2C181001B180A /* Anxiety */ = {
+			isa = PBXGroup;
+			children = (
+				0D56F96B1FA2C1A4001B180A /* AnxietyVCViewController.swift */,
+			);
+			path = Anxiety;
 			sourceTree = "<group>";
 		};
 		0DA081AB1F9B726C00849AEA /* Enums */ = {
@@ -304,8 +326,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4EFAEE1F85B17500A18A8C /* LaunchScreen.storyboard in Resources */,
 				0D4EFAEB1F85B17500A18A8C /* Assets.xcassets in Resources */,
+				0D56F9691FA2BF09001B180A /* Launch Screen.storyboard in Resources */,
 				0D4EFAE61F85B17500A18A8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */,
+				0D56F9671FA2B85F001B180A /* ActionsVC.swift in Sources */,
+				0D56F96C1FA2C1A4001B180A /* AnxietyVCViewController.swift in Sources */,
 				0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */,
 				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
@@ -382,14 +406,6 @@
 				0D4EFAE51F85B17500A18A8C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D4EFAEC1F85B17500A18A8C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D4EFAED1F85B17500A18A8C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
