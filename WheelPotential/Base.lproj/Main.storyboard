@@ -14,33 +14,47 @@
         <scene sceneID="gPb-R3-aRP">
             <objects>
                 <viewController storyboardIdentifier="AnxietyViewController" title="Anxiety View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g3Y-KL-acV" customClass="AnxietyVC" customModule="WheelPotential" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bjo-W1-lxS">
+                    <view key="view" contentMode="scaleAspectFill" id="bjo-W1-lxS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-lE-zwR">
-                                <rect key="frame" x="16" y="0.0" width="343" height="353"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="353" id="1AD-Aj-pzx"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need to put text in here to get the user to define their anxiety. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb">
-                                <rect key="frame" x="16" y="332" width="343" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="m4y-A2-Ywo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify Your Anxiety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvR-7i-0Xa" userLabel="Title Label">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-bU-POB">
-                                <rect key="frame" x="145" y="547" width="84" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="7wX-E9-SaH"/>
-                                    <constraint firstAttribute="height" constant="100" id="ZvR-BS-pfo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
-                                <state key="normal" title="GO!"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFd-bP-YGV" userLabel="Explanation Label">
+                                <rect key="frame" x="16" y="50" width="343" height="183"/>
+                                <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other.
+
+The first step is to identify the thought by answering the question:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb" userLabel="Question Label">
+                                <rect key="frame" x="16" y="232" width="343" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
+                                <rect key="frame" x="16" y="291" width="343" height="122"/>
+                                <string key="text">Examples:
+"My weight is getting out of hand"
+"I'm stressed out at work"
+"I don't have enough money in the bank"
+"My relationship is not where I want to be"
+"Like to volunteer more"</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-bU-POB" userLabel="Next Button">
+                                <rect key="frame" x="0.0" y="631" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Click Here to Assign a Feeling"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
@@ -53,14 +67,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vBe-lE-zwR" firstAttribute="centerY" secondItem="bjo-W1-lxS" secondAttribute="centerY" constant="-157" id="3Xv-1K-qtJ"/>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="bottom" constant="20" id="6p8-tA-lSf"/>
-                            <constraint firstItem="i3L-yv-sUb" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="FXq-gV-Oiu"/>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="vBe-lE-zwR" secondAttribute="trailing" constant="16" id="Mpf-mw-Eb4"/>
-                            <constraint firstItem="bp3-bU-POB" firstAttribute="centerX" secondItem="bjo-W1-lxS" secondAttribute="centerX" id="QmQ-7G-sGB"/>
-                            <constraint firstItem="i3L-yv-sUb" firstAttribute="top" secondItem="vBe-lE-zwR" secondAttribute="bottom" constant="-21" id="YLJ-iC-Nyk"/>
-                            <constraint firstItem="vBe-lE-zwR" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="ZYD-bE-ELL"/>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="i3L-yv-sUb" secondAttribute="trailing" constant="16" id="yAN-dc-BZQ"/>
+                            <constraint firstItem="i3L-yv-sUb" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="7R7-wd-LAE"/>
+                            <constraint firstItem="tFd-bP-YGV" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="8c9-1s-yDG"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="bottom" id="C2c-bN-vdr"/>
+                            <constraint firstItem="tFd-bP-YGV" firstAttribute="top" secondItem="QvR-7i-0Xa" secondAttribute="bottom" id="Ilq-Gq-FDa"/>
+                            <constraint firstItem="QvR-7i-0Xa" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" id="LXy-A6-OZL"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="bp3-bU-POB" secondAttribute="trailing" id="V31-YL-KzO"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="leading" secondItem="bp3-bU-POB" secondAttribute="leading" id="ZEA-Qf-qml"/>
+                            <constraint firstItem="XeC-za-voh" firstAttribute="top" secondItem="i3L-yv-sUb" secondAttribute="bottom" constant="-1" id="aCK-z6-J8u"/>
+                            <constraint firstItem="i3L-yv-sUb" firstAttribute="top" secondItem="tFd-bP-YGV" secondAttribute="bottom" constant="-1" id="dfy-eR-GRd"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" constant="16" id="nFK-6w-Bfo"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="QvR-7i-0Xa" secondAttribute="trailing" id="nRy-p1-flz"/>
+                            <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="oOw-0n-g9Y"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="i3L-yv-sUb" secondAttribute="trailing" constant="16" id="rhk-CO-c5T"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="tFd-bP-YGV" secondAttribute="trailing" constant="16" id="vuV-Ay-8Tk"/>
+                            <constraint firstItem="QvR-7i-0Xa" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" id="zJ0-sZ-2Fo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
@@ -80,8 +101,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign a Genuine Feeling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V96-8q-mTm" userLabel="Title Label">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="76B-RA-HOA">
-                                <rect key="frame" x="16" y="20" width="343" height="419"/>
+                                <rect key="frame" x="16" y="50" width="343" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" rowHeight="43" id="vzE-cr-KEm" userLabel="Word Cell" customClass="WordCell" customModule="WheelPotential">
@@ -131,16 +158,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="76B-RA-HOA" firstAttribute="top" secondItem="V96-8q-mTm" secondAttribute="bottom" id="0S0-A7-Y5W"/>
                             <constraint firstItem="wbB-sn-iTL" firstAttribute="top" secondItem="76B-RA-HOA" secondAttribute="bottom" constant="8" id="3zk-Nq-5El"/>
                             <constraint firstItem="2bA-H6-oWJ" firstAttribute="leading" secondItem="wbB-sn-iTL" secondAttribute="leading" id="4KC-GV-9PM"/>
                             <constraint firstItem="2bA-H6-oWJ" firstAttribute="bottom" secondItem="wbB-sn-iTL" secondAttribute="bottom" id="9Ch-jN-dVC"/>
                             <constraint firstItem="wbB-sn-iTL" firstAttribute="leading" secondItem="PVg-nv-Vle" secondAttribute="leading" constant="16" id="DTb-hO-eo3"/>
                             <constraint firstItem="2bA-H6-oWJ" firstAttribute="trailing" secondItem="wbB-sn-iTL" secondAttribute="trailing" id="E9n-D6-Wij"/>
                             <constraint firstItem="2bA-H6-oWJ" firstAttribute="top" secondItem="wbB-sn-iTL" secondAttribute="top" id="EWE-Wb-8Zf"/>
+                            <constraint firstItem="PVg-nv-Vle" firstAttribute="trailing" secondItem="V96-8q-mTm" secondAttribute="trailing" constant="16" id="EkH-L7-Ffq"/>
                             <constraint firstItem="PVg-nv-Vle" firstAttribute="trailing" secondItem="wbB-sn-iTL" secondAttribute="trailing" constant="16" id="GYI-h3-g84"/>
                             <constraint firstItem="PVg-nv-Vle" firstAttribute="bottom" secondItem="wbB-sn-iTL" secondAttribute="bottom" constant="20" id="Hlp-H2-eSw"/>
                             <constraint firstItem="76B-RA-HOA" firstAttribute="trailing" secondItem="6i9-5H-88l" secondAttribute="trailingMargin" id="MMR-iz-g2F"/>
-                            <constraint firstItem="76B-RA-HOA" firstAttribute="top" secondItem="PVg-nv-Vle" secondAttribute="top" id="m78-5B-CYH"/>
+                            <constraint firstItem="V96-8q-mTm" firstAttribute="top" secondItem="PVg-nv-Vle" secondAttribute="top" id="b5e-Vf-ImN"/>
+                            <constraint firstItem="V96-8q-mTm" firstAttribute="leading" secondItem="PVg-nv-Vle" secondAttribute="leading" constant="16" id="iuk-mt-T2V"/>
                             <constraint firstItem="76B-RA-HOA" firstAttribute="leading" secondItem="6i9-5H-88l" secondAttribute="leadingMargin" id="xjM-j0-fXE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PVg-nv-Vle"/>
