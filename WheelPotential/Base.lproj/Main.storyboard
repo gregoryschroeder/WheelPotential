@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3Y-KL-acV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3Y-KL-acV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,14 +34,14 @@ The first step is to identify the thought by answering the question:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb" userLabel="Question Label">
-                                <rect key="frame" x="16" y="232" width="343" height="60"/>
+                                <rect key="frame" x="16" y="233" width="343" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
-                                <rect key="frame" x="16" y="291" width="343" height="122"/>
-                                <string key="text">Examples:
+                                <rect key="frame" x="16" y="292" width="343" height="122"/>
+                                <string key="text">For example:
 "My weight is getting out of hand"
 "I'm stressed out at work"
 "I don't have enough money in the bank"
@@ -51,6 +51,10 @@ The first step is to identify the thought by answering the question:</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-FQ-HRA" userLabel="Video Button">
+                                <rect key="frame" x="16" y="414" width="343" height="30"/>
+                                <state key="normal" title="Click for video example"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-bU-POB" userLabel="Next Button">
                                 <rect key="frame" x="0.0" y="631" width="375" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
@@ -64,22 +68,34 @@ The first step is to identify the thought by answering the question:</string>
                                     <action selector="GoButtonPress" destination="g3Y-KL-acV" eventType="touchUpInside" id="R2H-aV-v2p"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After you've clearly stated your thought" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qa-TX-c0V" userLabel="Action Label">
+                                <rect key="frame" x="16" y="610" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Qa-TX-c0V" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="6v1-Lg-5PO"/>
                             <constraint firstItem="i3L-yv-sUb" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="7R7-wd-LAE"/>
                             <constraint firstItem="tFd-bP-YGV" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="8c9-1s-yDG"/>
+                            <constraint firstItem="wLS-FQ-HRA" firstAttribute="top" secondItem="XeC-za-voh" secondAttribute="bottom" id="AwO-pk-xiG"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="5Qa-TX-c0V" secondAttribute="trailing" constant="16" id="Bb6-tB-43o"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="bottom" id="C2c-bN-vdr"/>
                             <constraint firstItem="tFd-bP-YGV" firstAttribute="top" secondItem="QvR-7i-0Xa" secondAttribute="bottom" id="Ilq-Gq-FDa"/>
+                            <constraint firstItem="wLS-FQ-HRA" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="Ks4-IM-JA6"/>
                             <constraint firstItem="QvR-7i-0Xa" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" id="LXy-A6-OZL"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="bp3-bU-POB" secondAttribute="trailing" id="V31-YL-KzO"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="leading" secondItem="bp3-bU-POB" secondAttribute="leading" id="ZEA-Qf-qml"/>
                             <constraint firstItem="XeC-za-voh" firstAttribute="top" secondItem="i3L-yv-sUb" secondAttribute="bottom" constant="-1" id="aCK-z6-J8u"/>
-                            <constraint firstItem="i3L-yv-sUb" firstAttribute="top" secondItem="tFd-bP-YGV" secondAttribute="bottom" constant="-1" id="dfy-eR-GRd"/>
+                            <constraint firstItem="i3L-yv-sUb" firstAttribute="top" secondItem="tFd-bP-YGV" secondAttribute="bottom" id="dfy-eR-GRd"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="wLS-FQ-HRA" secondAttribute="trailing" constant="16" id="ikz-je-W7J"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" constant="16" id="nFK-6w-Bfo"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="QvR-7i-0Xa" secondAttribute="trailing" id="nRy-p1-flz"/>
                             <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="oOw-0n-g9Y"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="i3L-yv-sUb" secondAttribute="trailing" constant="16" id="rhk-CO-c5T"/>
+                            <constraint firstItem="5Qa-TX-c0V" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="top" id="sUm-pO-yPb"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="tFd-bP-YGV" secondAttribute="trailing" constant="16" id="vuV-Ay-8Tk"/>
                             <constraint firstItem="QvR-7i-0Xa" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" id="zJ0-sZ-2Fo"/>
                         </constraints>
@@ -92,6 +108,50 @@ The first step is to identify the thought by answering the question:</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F6-uC-vBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1218.4000000000001" y="-90.404797601199405"/>
+        </scene>
+        <!--DisclaimerViewController-->
+        <scene sceneID="HGI-PS-KFg">
+            <objects>
+                <viewController storyboardIdentifier="DisclaimerVC" title="DisclaimerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cwp-AZ-F72" customClass="DisclaimerVC" customModule="WheelPotential" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r2h-5P-jij">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0by-Ry-cZo" userLabel="Back Button">
+                                <rect key="frame" x="15" y="607" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xRR-kN-7tI"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackButtonClick:" destination="JFt-mC-TDx" eventType="touchUpInside" id="Ehn-cI-QQR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epr-Hx-1pv" userLabel="Disclaimer Label">
+                                <rect key="frame" x="16" y="20" width="342" height="587"/>
+                                <string key="text">Individual results will always vary, and your results will depend on your individual capacity, willingness to change, level of motivation and diligence in applying the Wheel Potential Model. The material in this application is used as suggested actions only and is not designed to diagnose or treat medical or psychological conditions. Always consult a physician or licensed therapist if you need treatment beyond the scope of the Wheel Potential Model.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="epr-Hx-1pv" firstAttribute="top" secondItem="rfe-nR-pVi" secondAttribute="top" id="Dal-Mu-iCE"/>
+                            <constraint firstItem="rfe-nR-pVi" firstAttribute="bottom" secondItem="0by-Ry-cZo" secondAttribute="bottom" constant="20" id="T2G-wf-Ra4"/>
+                            <constraint firstItem="epr-Hx-1pv" firstAttribute="leading" secondItem="rfe-nR-pVi" secondAttribute="leading" constant="16" id="Zgv-si-8JL"/>
+                            <constraint firstItem="rfe-nR-pVi" firstAttribute="trailing" secondItem="epr-Hx-1pv" secondAttribute="trailing" constant="17" id="cfd-7C-fh5"/>
+                            <constraint firstItem="rfe-nR-pVi" firstAttribute="trailing" secondItem="0by-Ry-cZo" secondAttribute="trailing" constant="15" id="djt-us-qHO"/>
+                            <constraint firstItem="epr-Hx-1pv" firstAttribute="bottom" secondItem="0by-Ry-cZo" secondAttribute="top" id="kGA-PQ-fmK"/>
+                            <constraint firstItem="0by-Ry-cZo" firstAttribute="leading" secondItem="rfe-nR-pVi" secondAttribute="leading" constant="15" id="qJQ-d5-Wle"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rfe-nR-pVi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6C-fu-AuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JFt-mC-TDx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="-955.77211394302856"/>
         </scene>
         <!--WheelViewController-->
         <scene sceneID="9dW-xd-rqi">
@@ -119,7 +179,7 @@ The first step is to identify the thought by answering the question:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rip-yi-k6B" userLabel="Word">
-                                                    <rect key="frame" x="8" y="8" width="327" height="28"/>
+                                                    <rect key="frame" x="15" y="11" width="313" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
