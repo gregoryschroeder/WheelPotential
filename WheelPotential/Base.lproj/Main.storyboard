@@ -54,6 +54,9 @@ The first step is to identify the thought by answering the question:</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-FQ-HRA" userLabel="Video Button">
                                 <rect key="frame" x="16" y="414" width="343" height="30"/>
                                 <state key="normal" title="Click for video example"/>
+                                <connections>
+                                    <action selector="VideoButtonClick" destination="g3Y-KL-acV" eventType="touchUpInside" id="GYx-fa-geO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-bU-POB" userLabel="Next Button">
                                 <rect key="frame" x="0.0" y="631" width="375" height="36"/>
