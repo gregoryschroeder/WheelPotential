@@ -36,7 +36,7 @@ The first step is to identify the thought by answering the question:</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb" userLabel="Question Label">
                                 <rect key="frame" x="16" y="233" width="343" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
@@ -52,7 +52,7 @@ The first step is to identify the thought by answering the question:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-FQ-HRA" userLabel="Video Button">
-                                <rect key="frame" x="16" y="414" width="343" height="30"/>
+                                <rect key="frame" x="16" y="580" width="343" height="30"/>
                                 <state key="normal" title="Click for video example"/>
                                 <connections>
                                     <action selector="VideoButtonClick" destination="g3Y-KL-acV" eventType="touchUpInside" id="GYx-fa-geO"/>
@@ -83,7 +83,6 @@ The first step is to identify the thought by answering the question:</string>
                             <constraint firstItem="5Qa-TX-c0V" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="6v1-Lg-5PO"/>
                             <constraint firstItem="i3L-yv-sUb" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="7R7-wd-LAE"/>
                             <constraint firstItem="tFd-bP-YGV" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="8c9-1s-yDG"/>
-                            <constraint firstItem="wLS-FQ-HRA" firstAttribute="top" secondItem="XeC-za-voh" secondAttribute="bottom" id="AwO-pk-xiG"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="5Qa-TX-c0V" secondAttribute="trailing" constant="16" id="Bb6-tB-43o"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="bottom" id="C2c-bN-vdr"/>
                             <constraint firstItem="tFd-bP-YGV" firstAttribute="top" secondItem="QvR-7i-0Xa" secondAttribute="bottom" id="Ilq-Gq-FDa"/>
@@ -97,6 +96,7 @@ The first step is to identify the thought by answering the question:</string>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" constant="16" id="nFK-6w-Bfo"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="QvR-7i-0Xa" secondAttribute="trailing" id="nRy-p1-flz"/>
                             <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="oOw-0n-g9Y"/>
+                            <constraint firstItem="wLS-FQ-HRA" firstAttribute="bottom" secondItem="5Qa-TX-c0V" secondAttribute="top" id="qZo-UT-XED"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="i3L-yv-sUb" secondAttribute="trailing" constant="16" id="rhk-CO-c5T"/>
                             <constraint firstItem="5Qa-TX-c0V" firstAttribute="bottom" secondItem="bp3-bU-POB" secondAttribute="top" id="sUm-pO-yPb"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="tFd-bP-YGV" secondAttribute="trailing" constant="16" id="vuV-Ay-8Tk"/>
@@ -201,11 +201,18 @@ The first step is to identify the thought by answering the question:</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-H6-oWJ" userLabel="Wheel Image">
+                                <rect key="frame" x="16" y="447" width="343" height="200"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-sn-iTL" userLabel="Wheel Button">
                                 <rect key="frame" x="16" y="447" width="343" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="mbT-An-wmG"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="Click To Continue">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -215,9 +222,6 @@ The first step is to identify the thought by answering the question:</string>
                                     <action selector="WheelButtonClick" destination="Kim-zA-cJd" eventType="touchUpInside" id="odM-vB-zg5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-H6-oWJ" userLabel="Wheel Image">
-                                <rect key="frame" x="16" y="447" width="343" height="200"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
