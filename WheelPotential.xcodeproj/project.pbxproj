@@ -26,6 +26,28 @@
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
 		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
 		0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */; };
+		0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */; };
+		0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DD1FD344BD00102DC8 /* Love.txt */; };
+		0DCFE2E01FD3456000102DC8 /* Joy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DF1FD3456000102DC8 /* Joy.txt */; };
+		0DCFE2E21FD345A600102DC8 /* Passion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2E11FD345A600102DC8 /* Passion.txt */; };
+		0DCFE2E41FD345CB00102DC8 /* Happiness.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2E31FD345CB00102DC8 /* Happiness.txt */; };
+		0DCFE2E61FD345F200102DC8 /* Excitement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2E51FD345F200102DC8 /* Excitement.txt */; };
+		0DCFE2E81FD3460B00102DC8 /* Joyful Expectation.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2E71FD3460B00102DC8 /* Joyful Expectation.txt */; };
+		0DCFE2EA1FD3462C00102DC8 /* Hope.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2E91FD3462C00102DC8 /* Hope.txt */; };
+		0DCFE2EC1FD3464B00102DC8 /* Satisfaction.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2EB1FD3464B00102DC8 /* Satisfaction.txt */; };
+		0DCFE2EE1FD3466500102DC8 /* Calm.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2ED1FD3466500102DC8 /* Calm.txt */; };
+		0DCFE2F01FD3467D00102DC8 /* Boredom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2EF1FD3467D00102DC8 /* Boredom.txt */; };
+		0DCFE2F21FD3469000102DC8 /* Annoyance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2F11FD3469000102DC8 /* Annoyance.txt */; };
+		0DCFE2F41FD346A900102DC8 /* Worry.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2F31FD346A900102DC8 /* Worry.txt */; };
+		0DCFE2F61FD346BE00102DC8 /* Blame.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2F51FD346BE00102DC8 /* Blame.txt */; };
+		0DCFE2F81FD346D200102DC8 /* Anger.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2F71FD346D200102DC8 /* Anger.txt */; };
+		0DCFE2FA1FD346E500102DC8 /* Revenge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2F91FD346E500102DC8 /* Revenge.txt */; };
+		0DCFE2FC1FD346F600102DC8 /* Hate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2FB1FD346F600102DC8 /* Hate.txt */; };
+		0DCFE2FE1FD3470900102DC8 /* Resentment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2FD1FD3470900102DC8 /* Resentment.txt */; };
+		0DCFE3001FD3471D00102DC8 /* Guilt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2FF1FD3471D00102DC8 /* Guilt.txt */; };
+		0DCFE3021FD3472F00102DC8 /* Depression.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3011FD3472F00102DC8 /* Depression.txt */; };
+		0DCFE3041FD3474100102DC8 /* Apathy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3031FD3474100102DC8 /* Apathy.txt */; };
+		0DCFE3061FD3475600102DC8 /* Fear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3051FD3475600102DC8 /* Fear.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +93,28 @@
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionVC.swift; sourceTree = "<group>"; };
+		0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gratitude.txt; sourceTree = "<group>"; };
+		0DCFE2DD1FD344BD00102DC8 /* Love.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Love.txt; sourceTree = "<group>"; };
+		0DCFE2DF1FD3456000102DC8 /* Joy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Joy.txt; sourceTree = "<group>"; };
+		0DCFE2E11FD345A600102DC8 /* Passion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Passion.txt; sourceTree = "<group>"; };
+		0DCFE2E31FD345CB00102DC8 /* Happiness.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Happiness.txt; sourceTree = "<group>"; };
+		0DCFE2E51FD345F200102DC8 /* Excitement.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Excitement.txt; sourceTree = "<group>"; };
+		0DCFE2E71FD3460B00102DC8 /* Joyful Expectation.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Joyful Expectation.txt"; sourceTree = "<group>"; };
+		0DCFE2E91FD3462C00102DC8 /* Hope.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hope.txt; sourceTree = "<group>"; };
+		0DCFE2EB1FD3464B00102DC8 /* Satisfaction.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Satisfaction.txt; sourceTree = "<group>"; };
+		0DCFE2ED1FD3466500102DC8 /* Calm.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Calm.txt; sourceTree = "<group>"; };
+		0DCFE2EF1FD3467D00102DC8 /* Boredom.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Boredom.txt; sourceTree = "<group>"; };
+		0DCFE2F11FD3469000102DC8 /* Annoyance.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Annoyance.txt; sourceTree = "<group>"; };
+		0DCFE2F31FD346A900102DC8 /* Worry.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Worry.txt; sourceTree = "<group>"; };
+		0DCFE2F51FD346BE00102DC8 /* Blame.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Blame.txt; sourceTree = "<group>"; };
+		0DCFE2F71FD346D200102DC8 /* Anger.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Anger.txt; sourceTree = "<group>"; };
+		0DCFE2F91FD346E500102DC8 /* Revenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Revenge.txt; sourceTree = "<group>"; };
+		0DCFE2FB1FD346F600102DC8 /* Hate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hate.txt; sourceTree = "<group>"; };
+		0DCFE2FD1FD3470900102DC8 /* Resentment.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Resentment.txt; sourceTree = "<group>"; };
+		0DCFE2FF1FD3471D00102DC8 /* Guilt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Guilt.txt; sourceTree = "<group>"; };
+		0DCFE3011FD3472F00102DC8 /* Depression.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Depression.txt; sourceTree = "<group>"; };
+		0DCFE3031FD3474100102DC8 /* Apathy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Apathy.txt; sourceTree = "<group>"; };
+		0DCFE3051FD3475600102DC8 /* Fear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fear.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +163,10 @@
 		0D4EFAD41F85B17500A18A8C = {
 			isa = PBXGroup;
 			children = (
+				0D4EFADE1F85B17500A18A8C /* Products */,
 				0D4EFADF1F85B17500A18A8C /* WheelPotential */,
 				0D4EFAF71F85B17500A18A8C /* WheelPotentialTests */,
 				0D4EFB021F85B17500A18A8C /* WheelPotentialUITests */,
-				0D4EFADE1F85B17500A18A8C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,9 +272,39 @@
 		0DC3A1091F9BC00C0049108C /* Definition */ = {
 			isa = PBXGroup;
 			children = (
+				0DCFE2DA1FD3448F00102DC8 /* Definition Files */,
 				0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */,
 			);
 			path = Definition;
+			sourceTree = "<group>";
+		};
+		0DCFE2DA1FD3448F00102DC8 /* Definition Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFE2F71FD346D200102DC8 /* Anger.txt */,
+				0DCFE2F11FD3469000102DC8 /* Annoyance.txt */,
+				0DCFE3031FD3474100102DC8 /* Apathy.txt */,
+				0DCFE2F51FD346BE00102DC8 /* Blame.txt */,
+				0DCFE2EF1FD3467D00102DC8 /* Boredom.txt */,
+				0DCFE2ED1FD3466500102DC8 /* Calm.txt */,
+				0DCFE3011FD3472F00102DC8 /* Depression.txt */,
+				0DCFE2E51FD345F200102DC8 /* Excitement.txt */,
+				0DCFE3051FD3475600102DC8 /* Fear.txt */,
+				0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */,
+				0DCFE2FF1FD3471D00102DC8 /* Guilt.txt */,
+				0DCFE2E31FD345CB00102DC8 /* Happiness.txt */,
+				0DCFE2FB1FD346F600102DC8 /* Hate.txt */,
+				0DCFE2E91FD3462C00102DC8 /* Hope.txt */,
+				0DCFE2DF1FD3456000102DC8 /* Joy.txt */,
+				0DCFE2E71FD3460B00102DC8 /* Joyful Expectation.txt */,
+				0DCFE2DD1FD344BD00102DC8 /* Love.txt */,
+				0DCFE2E11FD345A600102DC8 /* Passion.txt */,
+				0DCFE2FD1FD3470900102DC8 /* Resentment.txt */,
+				0DCFE2F91FD346E500102DC8 /* Revenge.txt */,
+				0DCFE2EB1FD3464B00102DC8 /* Satisfaction.txt */,
+				0DCFE2F31FD346A900102DC8 /* Worry.txt */,
+			);
+			path = "Definition Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,10 +414,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCFE2F61FD346BE00102DC8 /* Blame.txt in Resources */,
 				0D5DD85C1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 in Resources */,
+				0DCFE2FC1FD346F600102DC8 /* Hate.txt in Resources */,
+				0DCFE2E01FD3456000102DC8 /* Joy.txt in Resources */,
+				0DCFE2F81FD346D200102DC8 /* Anger.txt in Resources */,
+				0DCFE2FE1FD3470900102DC8 /* Resentment.txt in Resources */,
+				0DCFE2F01FD3467D00102DC8 /* Boredom.txt in Resources */,
+				0DCFE2EC1FD3464B00102DC8 /* Satisfaction.txt in Resources */,
+				0DCFE3041FD3474100102DC8 /* Apathy.txt in Resources */,
+				0DCFE2EA1FD3462C00102DC8 /* Hope.txt in Resources */,
+				0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */,
+				0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */,
+				0DCFE3061FD3475600102DC8 /* Fear.txt in Resources */,
+				0DCFE2FA1FD346E500102DC8 /* Revenge.txt in Resources */,
+				0DCFE3001FD3471D00102DC8 /* Guilt.txt in Resources */,
+				0DCFE2F21FD3469000102DC8 /* Annoyance.txt in Resources */,
+				0DCFE2E61FD345F200102DC8 /* Excitement.txt in Resources */,
+				0DCFE2F41FD346A900102DC8 /* Worry.txt in Resources */,
+				0DCFE3021FD3472F00102DC8 /* Depression.txt in Resources */,
 				0D4EFAEB1F85B17500A18A8C /* Assets.xcassets in Resources */,
+				0DCFE2E81FD3460B00102DC8 /* Joyful Expectation.txt in Resources */,
 				0D56F9691FA2BF09001B180A /* Launch Screen.storyboard in Resources */,
+				0DCFE2E21FD345A600102DC8 /* Passion.txt in Resources */,
 				0D4EFAE61F85B17500A18A8C /* Main.storyboard in Resources */,
+				0DCFE2E41FD345CB00102DC8 /* Happiness.txt in Resources */,
+				0DCFE2EE1FD3466500102DC8 /* Calm.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

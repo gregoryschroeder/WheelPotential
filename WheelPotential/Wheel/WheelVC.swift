@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -39,6 +40,19 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    @IBAction func PlayButtonClick(_ sender: Any) {
+        guard let path = Bundle.main.path(forResource: "WheelPotential_Blu-ray_60_1080i.mpg_1", ofType:"mp4") else {
+            debugPrint("video.m4v not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
     // MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,6 +82,7 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if let wordColor = Words(rawValue: indexPath.row)?.color {
             WheelButton.backgroundColor = UIColor(hexString: "#\(wordColor)FF")
+            WheelButton.titleLabel?.textColor = UIColor.black
         }
     }
 }

@@ -82,7 +82,7 @@ enum Words: Int, CaseCountable {
     }
     
     var color: String {
-        switch  self {
+        switch self {
         case .Love:
             return "00A651"
         case .Gratitude:
