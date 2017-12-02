@@ -294,8 +294,8 @@ The first step is to identify the thought by answering the question:</string>
                                     <constraint firstAttribute="trailing" secondItem="PJU-F0-oaz" secondAttribute="trailing" id="hZf-D6-boH"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IK-w8-Qon">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IK-w8-Qon">
+                                <rect key="frame" x="46" y="617" width="313" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Wg3-bB-3R1"/>
                                 </constraints>
@@ -314,19 +314,29 @@ The first step is to identify the thought by answering the question:</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-0G-qCB" userLabel="Back">
+                                <rect key="frame" x="16" y="609" width="30" height="46"/>
+                                <state key="normal" title="🔙"/>
+                                <connections>
+                                    <action selector="BackButtonPress:" destination="pKb-Pb-uhF" eventType="touchUpInside" id="onY-fS-jTA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DB2-0G-qCB" firstAttribute="leading" secondItem="Y4P-Xk-Wp1" secondAttribute="leading" constant="16" id="6OW-ZW-yK5"/>
                             <constraint firstItem="Y4P-Xk-Wp1" firstAttribute="trailing" secondItem="6IK-w8-Qon" secondAttribute="trailing" constant="16" id="AZ6-aM-f1J"/>
+                            <constraint firstItem="DB2-0G-qCB" firstAttribute="top" secondItem="UyK-1B-BKs" secondAttribute="bottom" id="Dfj-0z-n2a"/>
                             <constraint firstItem="gCg-ZY-Tf3" firstAttribute="top" secondItem="Y4P-Xk-Wp1" secondAttribute="top" id="IuV-zg-vU6"/>
+                            <constraint firstItem="6IK-w8-Qon" firstAttribute="leading" secondItem="DB2-0G-qCB" secondAttribute="trailing" id="MfK-u5-fTG"/>
                             <constraint firstItem="UyK-1B-BKs" firstAttribute="top" secondItem="gCg-ZY-Tf3" secondAttribute="bottom" id="N1g-n3-cSI"/>
                             <constraint firstItem="Y4P-Xk-Wp1" firstAttribute="trailing" secondItem="gCg-ZY-Tf3" secondAttribute="trailing" constant="16" id="Oo0-h3-rtf"/>
                             <constraint firstItem="UyK-1B-BKs" firstAttribute="leading" secondItem="uR2-X4-0GT" secondAttribute="leadingMargin" id="Sfk-r0-GnD"/>
                             <constraint firstItem="gCg-ZY-Tf3" firstAttribute="leading" secondItem="Y4P-Xk-Wp1" secondAttribute="leading" constant="16" id="XIF-dR-vqc"/>
                             <constraint firstItem="UyK-1B-BKs" firstAttribute="trailing" secondItem="uR2-X4-0GT" secondAttribute="trailingMargin" id="Z4I-uG-xRp"/>
-                            <constraint firstItem="6IK-w8-Qon" firstAttribute="leading" secondItem="Y4P-Xk-Wp1" secondAttribute="leading" constant="16" id="aR2-EJ-uwv"/>
                             <constraint firstItem="PJU-F0-oaz" firstAttribute="leading" secondItem="Y4P-Xk-Wp1" secondAttribute="leading" constant="16" id="dx9-d0-h4u"/>
                             <constraint firstItem="UyK-1B-BKs" firstAttribute="bottom" secondItem="6IK-w8-Qon" secondAttribute="top" constant="-8" id="guO-bp-I8I"/>
+                            <constraint firstItem="DB2-0G-qCB" firstAttribute="centerY" secondItem="6IK-w8-Qon" secondAttribute="centerY" id="qGo-6h-HgU"/>
                             <constraint firstItem="Y4P-Xk-Wp1" firstAttribute="trailing" secondItem="PJU-F0-oaz" secondAttribute="trailing" constant="16" id="tco-0E-Xdf"/>
                             <constraint firstItem="Y4P-Xk-Wp1" firstAttribute="bottom" secondItem="6IK-w8-Qon" secondAttribute="bottom" constant="20" id="uIh-Gn-RaI"/>
                         </constraints>
@@ -364,7 +374,6 @@ The first step is to identify the thought by answering the question:</string>
         <image name="Wheel" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9J5-aN-aAH"/>
         <segue reference="i4o-6W-vR5"/>
     </inferredMetricsTieBreakers>
 </document>

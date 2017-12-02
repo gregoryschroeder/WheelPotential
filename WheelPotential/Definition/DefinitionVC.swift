@@ -49,8 +49,11 @@ class DefinitionVC: UIViewController {
     
     // MARK: - Navigation
     
-    @IBAction func SuggestedActionButtonPress(_ sender: Any) {
+    @IBAction func BackButtonPress(_ sender: Any) {
         performSegue(withIdentifier: "BackToSelectionSegue", sender: self)
-        //        performSegue(withIdentifier: "ActionsSegue", sender: self)
+    }
+    
+    @IBAction func SuggestedActionButtonPress(_ sender: Any) {
+        performSegue(withIdentifier: "ActionsSegue", sender: self)
     }
 }
