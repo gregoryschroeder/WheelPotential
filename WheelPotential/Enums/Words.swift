@@ -130,5 +130,54 @@ enum Words: Int, CaseCountable {
         }
     }
     
+    var value: Int {
+        switch self {
+        case .Love:
+            return 11
+        case .Gratitude:
+            return 10
+        case .Joy:
+            return 9
+        case .Passion:
+            return 8
+        case .Happiness:
+            return 7
+        case .Excitement:
+            return 6
+        case .JoyfulExpectation:
+            return 5
+        case .Hope:
+            return 4
+        case .Satisfaction:
+            return 3
+        case .Calm:
+            return 2
+        case .Boredom:
+            return 1
+        case .Annoyance:
+            return -1
+        case .Worry:
+            return -2
+        case .Blame:
+            return -3
+        case .Anger:
+            return -4
+        case .Revenge:
+            return -5
+        case .Hate:
+            return -6
+        case .Resentment:
+            return -7
+        case .Guilt:
+            return -8
+        case .Depression:
+            return -9
+        case .Apathy:
+            return -10
+        case .Fear:
+            return -11
+        }
+    }
+    
     static let caseCount = Words.countCases()
 }

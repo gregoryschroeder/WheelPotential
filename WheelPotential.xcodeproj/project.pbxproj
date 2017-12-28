@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D03DFDD1FF5A803008D40DB /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03DFDC1FF5A803008D40DB /* ResultsVC.swift */; };
 		0D16449A1FAE5A410090F930 /* DisclaimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1644991FAE5A410090F930 /* DisclaimerVC.swift */; };
 		0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30D2EB1F9AAE0200609DCE /* CoreDataStack.swift */; };
 		0D30D2EE1F9AB0D900609DCE /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30D2ED1F9AB0D900609DCE /* Globals.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D03DFDC1FF5A803008D40DB /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		0D1644991FAE5A410090F930 /* DisclaimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerVC.swift; sourceTree = "<group>"; };
 		0D30D2EB1F9AAE0200609DCE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0D30D2ED1F9AB0D900609DCE /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D03DFDB1FF5A7DE008D40DB /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				0D03DFDC1FF5A803008D40DB /* ResultsVC.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
 		0D1644981FAE5A1F0090F930 /* Disclaimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0D03DFDB1FF5A7DE008D40DB /* Results */,
 				0D5DD85B1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 */,
 				0D1644981FAE5A1F0090F930 /* Disclaimer */,
 				0D56F96A1FA2C181001B180A /* Anxiety */,
@@ -471,6 +482,7 @@
 				0D16449A1FAE5A410090F930 /* DisclaimerVC.swift in Sources */,
 				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
+				0D03DFDD1FF5A803008D40DB /* ResultsVC.swift in Sources */,
 				0DA081B31F9B849100849AEA /* UIColor.swift in Sources */,
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
 				0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */,

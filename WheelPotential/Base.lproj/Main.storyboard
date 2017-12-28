@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3Y-KL-acV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ip-py-BTd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +28,7 @@
                                 <rect key="frame" x="16" y="65" width="375" height="537"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFd-bP-YGV" userLabel="Explanation Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                                         <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other.
 
 The first step is to identify the thought by answering the question:</string>
@@ -37,13 +37,13 @@ The first step is to identify the thought by answering the question:</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-yv-sUb" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="152.5" width="375" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="268" width="375" height="86.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
-                                        <rect key="frame" x="0.0" y="229" width="375" height="308"/>
+                                        <rect key="frame" x="0.0" y="357.5" width="375" height="179.5"/>
                                         <string key="text">For example:
 "My weight is getting out of hand"
 "I'm stressed out at work"
@@ -361,19 +361,123 @@ The first step is to identify the thought by answering the question:</string>
                     <view key="view" contentMode="scaleToFill" id="rvT-8v-d9G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="det-CI-eqR" userLabel="Word">
+                                <rect key="frame" x="16" y="20" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="3cB-aT-Vfm"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="42" id="Qsz-iT-0es"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="42" id="UqX-hq-tfs"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="tFj-vB-g62"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Examples from the bottom of the book pages will go here" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-0n-XKr">
+                                <rect key="frame" x="16" y="70" width="343" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2e-4H-8fX">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GO!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNk-t6-96t" userLabel="Back">
+                                <rect key="frame" x="16" y="617" width="30" height="30"/>
+                                <state key="normal" title="🔙"/>
+                                <connections>
+                                    <action selector="BackButtonPress:" destination="pKb-Pb-uhF" eventType="touchUpInside" id="5rL-6F-dsb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gNk-t6-96t" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="16" id="DYk-bs-Rbh"/>
+                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="trailing" secondItem="det-CI-eqR" secondAttribute="trailing" constant="16" id="N1A-Dx-A3n"/>
+                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="bottom" secondItem="gNk-t6-96t" secondAttribute="bottom" constant="20" id="SvG-xr-Csl"/>
+                            <constraint firstItem="det-CI-eqR" firstAttribute="top" secondItem="Z3T-DY-KbX" secondAttribute="top" id="ZZT-9S-m1m"/>
+                            <constraint firstItem="det-CI-eqR" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="16" id="bC2-uV-3VG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3T-DY-KbX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98f-6d-82l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="-90"/>
+            <point key="canvasLocation" x="2088.8000000000002" y="-90.404797601199405"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="oek-Uh-MdI">
+            <objects>
+                <viewController storyboardIdentifier="ResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8ip-py-BTd" customClass="ResultsVC" customModule="WheelPotential" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ep-a6-WX9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-fq-w3L">
+                                <rect key="frame" x="64" y="293.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Lm7-nw-fyM"/>
+                                    <constraint firstAttribute="width" constant="100" id="krk-25-BYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="YES">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-xq-vfB">
+                                <rect key="frame" x="211" y="293.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9Kv-6r-dvi"/>
+                                    <constraint firstAttribute="width" constant="100" id="dv9-JF-Kz4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did I get what I wanted today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-ME-T8q">
+                                <rect key="frame" x="16" y="70" width="343" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ml1-xq-vfB" firstAttribute="centerY" secondItem="78B-uG-RpG" secondAttribute="centerY" id="7rh-iH-3Vv"/>
+                            <constraint firstItem="E3A-fq-w3L" firstAttribute="leading" secondItem="78B-uG-RpG" secondAttribute="leading" constant="64" id="UHd-Yd-EL1"/>
+                            <constraint firstItem="E3A-fq-w3L" firstAttribute="centerY" secondItem="78B-uG-RpG" secondAttribute="centerY" id="VaK-Jw-KwH"/>
+                            <constraint firstItem="78B-uG-RpG" firstAttribute="trailing" secondItem="ml1-xq-vfB" secondAttribute="trailing" constant="64" id="hrn-Al-3dU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="78B-uG-RpG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3P-9k-ozZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045.5999999999999" y="-89.505247376311857"/>
         </scene>
     </scenes>
     <resources>
         <image name="Wheel" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YUi-0e-kH7"/>
+        <segue reference="i4o-6W-vR5"/>
     </inferredMetricsTieBreakers>
 </document>
