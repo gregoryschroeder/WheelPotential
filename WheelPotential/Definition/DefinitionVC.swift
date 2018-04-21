@@ -49,6 +49,13 @@ class DefinitionVC: UIViewController {
     
     // MARK: - Navigation
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ActionsVC {
+            let vc = segue.destination as? ActionsVC
+            vc?.selectedWord = self.selectedWord
+        }
+    }
+    
     @IBAction func BackButtonPress(_ sender: Any) {
         performSegue(withIdentifier: "BackToSelectionSegue", sender: self)
     }

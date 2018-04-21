@@ -26,6 +26,7 @@
 		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
 		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
+		0DBC9D582071199800DEC6CD /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBC9D572071199800DEC6CD /* GraphVC.swift */; };
 		0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */; };
 		0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */; };
 		0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DD1FD344BD00102DC8 /* Love.txt */; };
@@ -94,6 +95,7 @@
 		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		0DBC9D572071199800DEC6CD /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionVC.swift; sourceTree = "<group>"; };
 		0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gratitude.txt; sourceTree = "<group>"; };
 		0DCFE2DD1FD344BD00102DC8 /* Love.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Love.txt; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0DBC9D562071197700DEC6CD /* Graph */,
 				0D03DFDB1FF5A7DE008D40DB /* Results */,
 				0D5DD85B1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 */,
 				0D1644981FAE5A1F0090F930 /* Disclaimer */,
@@ -278,6 +281,14 @@
 				0DA081B21F9B849100849AEA /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DBC9D562071197700DEC6CD /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				0DBC9D572071199800DEC6CD /* GraphVC.swift */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 		0DC3A1091F9BC00C0049108C /* Definition */ = {
@@ -482,6 +493,7 @@
 				0D16449A1FAE5A410090F930 /* DisclaimerVC.swift in Sources */,
 				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
+				0DBC9D582071199800DEC6CD /* GraphVC.swift in Sources */,
 				0D03DFDD1FF5A803008D40DB /* ResultsVC.swift in Sources */,
 				0DA081B31F9B849100849AEA /* UIColor.swift in Sources */,
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
