@@ -27,7 +27,6 @@
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
 		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
 		0DBC9D582071199800DEC6CD /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBC9D572071199800DEC6CD /* GraphVC.swift */; };
-		0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */; };
 		0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */; };
 		0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DD1FD344BD00102DC8 /* Love.txt */; };
 		0DCFE2E01FD3456000102DC8 /* Joy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DF1FD3456000102DC8 /* Joy.txt */; };
@@ -96,7 +95,6 @@
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0DBC9D572071199800DEC6CD /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
-		0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionVC.swift; sourceTree = "<group>"; };
 		0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gratitude.txt; sourceTree = "<group>"; };
 		0DCFE2DD1FD344BD00102DC8 /* Love.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Love.txt; sourceTree = "<group>"; };
 		0DCFE2DF1FD3456000102DC8 /* Joy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Joy.txt; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				0D1644981FAE5A1F0090F930 /* Disclaimer */,
 				0D56F96A1FA2C181001B180A /* Anxiety */,
 				0D56F9651FA2B84E001B180A /* Actions */,
-				0DC3A1091F9BC00C0049108C /* Definition */,
 				0DA081B11F9B848200849AEA /* Extensions */,
 				0DA081AC1F9B751100849AEA /* Protocols */,
 				0DA081AB1F9B726C00849AEA /* Enums */,
@@ -237,6 +234,7 @@
 		0D4EFB111F85B1F900A18A8C /* Wheel */ = {
 			isa = PBXGroup;
 			children = (
+				0DCFE2DA1FD3448F00102DC8 /* Definition Files */,
 				0D4EFB121F85B21400A18A8C /* WheelVC.swift */,
 				0DA081AF1F9B76D000849AEA /* WordCell.swift */,
 			);
@@ -289,15 +287,6 @@
 				0DBC9D572071199800DEC6CD /* GraphVC.swift */,
 			);
 			path = Graph;
-			sourceTree = "<group>";
-		};
-		0DC3A1091F9BC00C0049108C /* Definition */ = {
-			isa = PBXGroup;
-			children = (
-				0DCFE2DA1FD3448F00102DC8 /* Definition Files */,
-				0DC3A10A1F9BC0360049108C /* DefinitionVC.swift */,
-			);
-			path = Definition;
 			sourceTree = "<group>";
 		};
 		0DCFE2DA1FD3448F00102DC8 /* Definition Files */ = {
@@ -499,7 +488,6 @@
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
 				0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */,
 				0D30D2EE1F9AB0D900609DCE /* Globals.swift in Sources */,
-				0DC3A10B1F9BC0360049108C /* DefinitionVC.swift in Sources */,
 				0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

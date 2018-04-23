@@ -11,9 +11,14 @@ import AVKit
 
 class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var myTableView: UITableView!
-    @IBOutlet weak var WheelButton: UIButton!
+    @IBOutlet weak var nextButton: UIBarButtonItem!
+    @IBOutlet weak var definitionLabel: UILabel!
     var selectedWord: Words?
+    
+    // MARK: - Initializer
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,38 +31,23 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Navigation
     
-    
-    @IBAction func WheelButtonClick() {
-        if let _ = selectedWord {
-            performSegue(withIdentifier: "WheelDefinitionSegue", sender: self)
-        }
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+        navigationController?.navigationBar.barTintColor = nil
+        navigationController?.navigationBar.tintColor = nil
+        navigationController?.popViewController(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is DefinitionVC {
-            let vc = segue.destination as? DefinitionVC
+        if segue.destination is ActionsVC {
+            let vc = segue.destination as? ActionsVC
             vc?.selectedWord = self.selectedWord
         }
     }
     
-    @IBAction func PlayButtonClick(_ sender: Any) {
-        guard let path = Bundle.main.path(forResource: "WheelPotential_Blu-ray_60_1080i.mpg_1", ofType:"mp4") else {
-            debugPrint("video.m4v not found")
-            return
-        }
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        
-        self.present(playerViewController, animated: true) {
-            playerViewController.player!.play()
-        }
-    }
     // MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Words.caseCount
-//        return 22
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,9 +59,6 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if let wordColor = Words(rawValue: indexPath.row)?.color {
             cell.Word.textColor = UIColor(hexString: "#\(wordColor)FF")
-//            cell.layer.cornerRadius = 6
-//            cell.layer.borderWidth = 2
-//            cell.layer.borderColor = UIColor(hexString: "#\(wordColor)FF")?.cgColor
         }
         
         return cell
@@ -81,8 +68,20 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         selectedWord = Words(rawValue: indexPath.row)
         
         if let wordColor = Words(rawValue: indexPath.row)?.color {
-            WheelButton.backgroundColor = UIColor(hexString: "#\(wordColor)FF")
-            WheelButton.titleLabel?.textColor = UIColor.black
+            navigationController?.navigationBar.barTintColor = UIColor(hexString: "#\(wordColor)FF")
+            nextButton.isEnabled = true
+            
+            if let filepath = Bundle.main.path(forResource: "\(selectedWord!.name)", ofType: "txt") {
+                do {
+                    let definition = try String(contentsOfFile: filepath)
+                    definitionLabel.text = definition
+                } catch {
+                    fatalError("Could not read the definition file.")
+                }
+            } else {
+                // TODO: Handle file not found error
+                fatalError("Definition file not found.")
+            }
         }
     }
 }
