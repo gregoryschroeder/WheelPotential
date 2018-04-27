@@ -26,7 +26,9 @@ class GraphVC: UIViewController {
     // MARK: - Navigation
     
     @IBAction func RestartTapped(_ sender: Any) {
-        performSegue(withIdentifier: "RestartSegue", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let wheelViewController = storyboard.instantiateViewController(withIdentifier: "AnxietyNavigationViewController") as! UINavigationController
+        self.present(wheelViewController, animated: true, completion: nil)
     }
 
 

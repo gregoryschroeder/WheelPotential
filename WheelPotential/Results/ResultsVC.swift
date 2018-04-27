@@ -19,34 +19,21 @@ class ResultsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func yesTapped(_ sender: Any) {
+    @IBAction func YesTapped(_ sender: UIButton) {
         let results = Results(context: CoreDataStack.getContext())
         
         results.date = Date()
-        results.feeling = Int32(Words.Love.rawValue)
+        results.feeling = Int32((selectedWord?.rawValue)!)
         results.result = true
         
         CoreDataStack.saveContext()
         
-        performSegue(withIdentifier: "GraphSegue", sender: self)
+        performSegue(withIdentifier: "graphSegue", sender: self)
     }
     
-    @IBAction func noTapped(_ sender: Any) {
+    @IBAction func NoTapped(_ sender: UIButton)  {
         let results = Results(context: CoreDataStack.getContext())
         
         results.date = Date()
@@ -55,6 +42,6 @@ class ResultsVC: UIViewController {
         
         CoreDataStack.saveContext()
         
-        performSegue(withIdentifier: "GraphSegue", sender: self)
+        performSegue(withIdentifier: "graphSegue", sender: self)
     }
 }
