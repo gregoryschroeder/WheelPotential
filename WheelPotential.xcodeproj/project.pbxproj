@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D03DFDD1FF5A803008D40DB /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03DFDC1FF5A803008D40DB /* ResultsVC.swift */; };
 		0D16449A1FAE5A410090F930 /* DisclaimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1644991FAE5A410090F930 /* DisclaimerVC.swift */; };
+		0D29F5D12092C5170048EAFB /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29F5D02092C5170048EAFB /* ResultCell.swift */; };
 		0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30D2EB1F9AAE0200609DCE /* CoreDataStack.swift */; };
 		0D30D2EE1F9AB0D900609DCE /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30D2ED1F9AB0D900609DCE /* Globals.swift */; };
 		0D4EFAE11F85B17500A18A8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4EFAE01F85B17500A18A8C /* AppDelegate.swift */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		0D03DFDC1FF5A803008D40DB /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		0D1644991FAE5A410090F930 /* DisclaimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerVC.swift; sourceTree = "<group>"; };
+		0D29F5D02092C5170048EAFB /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		0D30D2EB1F9AAE0200609DCE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0D30D2ED1F9AB0D900609DCE /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		0D4EFADD1F85B17500A18A8C /* WheelPotential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelPotential.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				0DBC9D572071199800DEC6CD /* GraphVC.swift */,
+				0D29F5D02092C5170048EAFB /* ResultCell.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -381,7 +384,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Schroeder Studios";
 				TargetAttributes = {
 					0D4EFADC1F85B17500A18A8C = {
@@ -483,6 +486,7 @@
 				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
 				0D4EFAE91F85B17500A18A8C /* WheelPotential.xcdatamodeld in Sources */,
 				0DBC9D582071199800DEC6CD /* GraphVC.swift in Sources */,
+				0D29F5D12092C5170048EAFB /* ResultCell.swift in Sources */,
 				0D03DFDD1FF5A803008D40DB /* ResultsVC.swift in Sources */,
 				0DA081B31F9B849100849AEA /* UIColor.swift in Sources */,
 				0D4EFB131F85B21400A18A8C /* WheelVC.swift in Sources */,
@@ -549,6 +553,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -556,6 +561,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -606,6 +612,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -613,6 +620,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

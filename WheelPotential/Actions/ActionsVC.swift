@@ -6,7 +6,6 @@
 //  Copyright © 2017 Schroeder Studios. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class ActionsVC: UIViewController {

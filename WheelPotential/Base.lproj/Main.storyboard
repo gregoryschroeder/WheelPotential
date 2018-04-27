@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--AnxietyNavigationViewController-->
         <scene sceneID="UL9-23-AHi">
             <objects>
-                <navigationController storyboardIdentifier="AnxietyNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IZh-mi-4NW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AnxietyNavigationViewController" title="AnxietyNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IZh-mi-4NW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KQO-mN-LdB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -369,6 +369,19 @@ The first step is to identify the thought by answering the question:</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
                                 <rect key="frame" x="20" y="70" width="335" height="477"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJi-Q2-sRe" id="6uj-4f-Dek">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Have I Done?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-CQ-jMa">
                                 <rect key="frame" x="20" y="20" width="335" height="42"/>
@@ -401,6 +414,9 @@ The first step is to identify the thought by answering the question:</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Btu-On-ega"/>
                     </view>
+                    <connections>
+                        <outlet property="myTableView" destination="BSj-ry-fbA" id="JdU-tT-L3N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHr-YZ-gf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

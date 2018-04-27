@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AVKit
 
 class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -22,7 +21,6 @@ class WheelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         myTableView.dataSource = self
         myTableView.delegate = self
