@@ -27,6 +27,7 @@
 		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
 		0DA081B01F9B76D000849AEA /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AF1F9B76D000849AEA /* WordCell.swift */; };
 		0DA081B31F9B849100849AEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081B21F9B849100849AEA /* UIColor.swift */; };
+		0DAA33962097E94300D0544C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAA33952097E94300D0544C /* StoreKit.framework */; };
 		0DBC9D582071199800DEC6CD /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBC9D572071199800DEC6CD /* GraphVC.swift */; };
 		0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */; };
 		0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE2DD1FD344BD00102DC8 /* Love.txt */; };
@@ -96,6 +97,8 @@
 		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
 		0DA081AF1F9B76D000849AEA /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		0DA081B21F9B849100849AEA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		0DAA33932097E93A00D0544C /* WheelPotential.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WheelPotential.entitlements; sourceTree = "<group>"; };
+		0DAA33952097E94300D0544C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0DBC9D572071199800DEC6CD /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		0DCFE2DB1FD344A900102DC8 /* Gratitude.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gratitude.txt; sourceTree = "<group>"; };
 		0DCFE2DD1FD344BD00102DC8 /* Love.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Love.txt; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAA33962097E94300D0544C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +183,7 @@
 				0D4EFADF1F85B17500A18A8C /* WheelPotential */,
 				0D4EFAF71F85B17500A18A8C /* WheelPotentialTests */,
 				0D4EFB021F85B17500A18A8C /* WheelPotentialUITests */,
+				0DAA33942097E94300D0544C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +200,7 @@
 		0D4EFADF1F85B17500A18A8C /* WheelPotential */ = {
 			isa = PBXGroup;
 			children = (
+				0DAA33932097E93A00D0544C /* WheelPotential.entitlements */,
 				0DBC9D562071197700DEC6CD /* Graph */,
 				0D03DFDB1FF5A7DE008D40DB /* Results */,
 				0D5DD85B1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 */,
@@ -281,6 +287,14 @@
 				0DA081B21F9B849100849AEA /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DAA33942097E94300D0544C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DAA33952097E94300D0544C /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0DBC9D562071197700DEC6CD /* Graph */ = {
@@ -390,6 +404,14 @@
 					0D4EFADC1F85B17500A18A8C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					0D4EFAF31F85B17500A18A8C = {
 						CreatedOnToolsVersion = 9.0;
@@ -654,11 +676,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WheelPotential/WheelPotential.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2926745ZP6;
+				DEVELOPMENT_TEAM = V88RN2WX6K;
 				INFOPLIST_FILE = WheelPotential/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SchroederStudios.WheelPotential;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WheelPotential;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -669,11 +692,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WheelPotential/WheelPotential.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2926745ZP6;
+				DEVELOPMENT_TEAM = V88RN2WX6K;
 				INFOPLIST_FILE = WheelPotential/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SchroederStudios.WheelPotential;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WheelPotential;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
