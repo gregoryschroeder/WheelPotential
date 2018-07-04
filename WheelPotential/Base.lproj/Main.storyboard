@@ -300,8 +300,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="hB9-Ap-Xug">
                                 <rect key="frame" x="20" y="70" width="335" height="307.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="QuestionLabel" text="Did I get what I wanted today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-ME-T8q" userLabel="QuestionLabel">
-                                        <rect key="frame" x="10" y="0.0" width="315.5" height="107.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="QuestionLabel" text="Did I get what I wanted?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-ME-T8q" userLabel="QuestionLabel">
+                                        <rect key="frame" x="21.5" y="0.0" width="292" height="107.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -386,7 +386,7 @@
                                     <action selector="RestartTapped:" destination="cu2-E4-x5K" eventType="touchUpInside" id="F56-KS-dbh"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
                                 <rect key="frame" x="20" y="70" width="335" height="477"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -394,14 +394,20 @@
                                         <rect key="frame" x="0.0" y="28" width="335" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJi-Q2-sRe" id="6uj-4f-Dek">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dab-2a-eKG" userLabel="Graph View">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="17"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZgW-8s-yzr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="76.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM" userLabel="Result Graph" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="1" width="319" height="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b5-d1-kNE" userLabel="Date Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM" userLabel="Result Graph" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="20.5" width="300" height="15"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="count">
                                                                     <integer key="value" value="20"/>
@@ -411,62 +417,40 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstItem="IHK-1U-9yM" firstAttribute="centerY" secondItem="Dab-2a-eKG" secondAttribute="centerY" id="4EF-TY-8g9"/>
-                                                        <constraint firstItem="IHK-1U-9yM" firstAttribute="leading" secondItem="Dab-2a-eKG" secondAttribute="leading" id="dCk-3b-sCT"/>
-                                                        <constraint firstAttribute="height" constant="17" id="wZB-Yp-bfh"/>
-                                                    </constraints>
-                                                </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdM-iE-EXN" userLabel="Text View">
-                                                    <rect key="frame" x="0.0" y="19" width="335" height="55.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b5-d1-kNE" userLabel="Date Label">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xml-jd-h2J" userLabel="Emotion Label">
+                                                            <rect key="frame" x="0.0" y="35.5" width="335" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xml-jd-h2J" userLabel="Emotion Label">
-                                                            <rect key="frame" x="50" y="0.0" width="335" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-wP-8mX" userLabel="Response Label">
-                                                            <rect key="frame" x="0.0" y="18.5" width="335" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did I get what I wanted?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-wP-8mX" userLabel="Response Label">
+                                                            <rect key="frame" x="0.0" y="56" width="335" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="4b5-d1-kNE" firstAttribute="leading" secondItem="kdM-iE-EXN" secondAttribute="leading" id="1zT-uH-Kp3"/>
-                                                        <constraint firstItem="xml-jd-h2J" firstAttribute="leading" secondItem="4b5-d1-kNE" secondAttribute="trailing" constant="8" id="DLf-uC-ioY"/>
-                                                        <constraint firstItem="4b5-d1-kNE" firstAttribute="bottom" secondItem="ydq-wP-8mX" secondAttribute="top" constant="2" id="GaX-uv-jvZ"/>
-                                                        <constraint firstItem="4b5-d1-kNE" firstAttribute="top" secondItem="kdM-iE-EXN" secondAttribute="top" id="Qya-pB-hog"/>
-                                                        <constraint firstAttribute="trailing" secondItem="xml-jd-h2J" secondAttribute="trailing" constant="-50" id="ggI-c9-cQk"/>
-                                                        <constraint firstItem="xml-jd-h2J" firstAttribute="top" secondItem="kdM-iE-EXN" secondAttribute="top" id="jBZ-cq-SFA"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ydq-wP-8mX" secondAttribute="trailing" id="qpO-29-cgn"/>
-                                                        <constraint firstItem="ydq-wP-8mX" firstAttribute="leading" secondItem="kdM-iE-EXN" secondAttribute="leading" id="vca-eG-lat"/>
+                                                        <constraint firstItem="IHK-1U-9yM" firstAttribute="leading" secondItem="ZgW-8s-yzr" secondAttribute="leading" id="9g0-2H-dTt"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4b5-d1-kNE" secondAttribute="trailing" id="X35-uE-7Qh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ydq-wP-8mX" secondAttribute="trailing" id="aoD-W4-r4V"/>
+                                                        <constraint firstItem="4b5-d1-kNE" firstAttribute="top" secondItem="ZgW-8s-yzr" secondAttribute="top" id="jDg-16-JKA"/>
+                                                        <constraint firstItem="4b5-d1-kNE" firstAttribute="leading" secondItem="ZgW-8s-yzr" secondAttribute="leading" id="qHE-sf-429"/>
+                                                        <constraint firstItem="xml-jd-h2J" firstAttribute="leading" secondItem="ZgW-8s-yzr" secondAttribute="leading" id="tfj-hb-CVD"/>
+                                                        <constraint firstItem="ydq-wP-8mX" firstAttribute="leading" secondItem="ZgW-8s-yzr" secondAttribute="leading" id="vU4-Aa-Dae"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xml-jd-h2J" secondAttribute="trailing" id="wxY-Jf-A1f"/>
                                                     </constraints>
-                                                </view>
+                                                </stackView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kdM-iE-EXN" firstAttribute="leading" secondItem="6uj-4f-Dek" secondAttribute="leading" id="3Co-dW-DlX"/>
-                                                <constraint firstItem="Dab-2a-eKG" firstAttribute="top" secondItem="6uj-4f-Dek" secondAttribute="top" id="8us-30-xKA"/>
-                                                <constraint firstAttribute="trailing" secondItem="kdM-iE-EXN" secondAttribute="trailing" id="HIQ-J0-a9j"/>
-                                                <constraint firstAttribute="trailing" secondItem="Dab-2a-eKG" secondAttribute="trailing" id="OF7-2J-Xw4"/>
-                                                <constraint firstItem="kdM-iE-EXN" firstAttribute="top" secondItem="Dab-2a-eKG" secondAttribute="bottom" constant="2" id="lHq-8F-cEs"/>
-                                                <constraint firstAttribute="bottom" secondItem="kdM-iE-EXN" secondAttribute="bottom" id="lZO-5X-Ftb"/>
-                                                <constraint firstItem="Dab-2a-eKG" firstAttribute="leading" secondItem="6uj-4f-Dek" secondAttribute="leading" id="lar-nN-rjU"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="ZgW-8s-yzr" firstAttribute="leading" secondItem="mJi-Q2-sRe" secondAttribute="leading" id="0L3-Ir-iRa"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZgW-8s-yzr" secondAttribute="trailing" id="S4o-UD-oKC"/>
+                                            <constraint firstItem="ZgW-8s-yzr" firstAttribute="top" secondItem="mJi-Q2-sRe" secondAttribute="top" id="SX0-hf-llH"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="DateLabel" destination="4b5-d1-kNE" id="Ek8-CG-Ify"/>
                                             <outlet property="EmotionLabel" destination="xml-jd-h2J" id="c6e-1d-a0u"/>

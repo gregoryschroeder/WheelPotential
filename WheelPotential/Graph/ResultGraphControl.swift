@@ -12,14 +12,21 @@ import UIKit
 
     // MARK: Properties
     private var fullGraph = [UIView]()
-    private var fill = 0
+    
+    var color: UIColor = UIColor.clear
+    
+    var fill = 0 {
+        didSet {
+            updateFill()
+        }
+    }
     
     @IBInspectable var size: CGSize = CGSize(width: 17.0, height: 17.0) {
         didSet {
             setupGraph()
         }
     }
-    @IBInspectable var count: Int = 20 {
+    @IBInspectable var count: Int = 21 {
         didSet {
             setupGraph()
         }
@@ -53,7 +60,7 @@ import UIKit
             let view = UIView()
             
             // Set background color
-            view.backgroundColor = UIColor.red
+            view.backgroundColor = UIColor.clear
             
             // Add constraints
             view.translatesAutoresizingMaskIntoConstraints = false
@@ -65,6 +72,18 @@ import UIKit
             
             // Add the view to the fullGraph array
             fullGraph.append(view)
+        }
+    }
+    
+    private func updateFill() {
+        for (_, view) in fullGraph.enumerated() {
+            view.backgroundColor = UIColor.clear
+        }
+        
+        for (index, view) in fullGraph.enumerated() {
+            if (index < fill) {
+                view.backgroundColor = color
+            }
         }
     }
 }
