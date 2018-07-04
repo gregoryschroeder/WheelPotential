@@ -16,6 +16,7 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var AverageEmotionGraph: ResultGraphControl!
     @IBOutlet weak var AverageEmotionLabel: UILabel!
     @IBOutlet weak var AverageView: UIView!
+    @IBOutlet weak var RestartButton: UIButton!
     
     let context = CoreDataStack.getContext()
     var results: [Results] = []
@@ -23,12 +24,13 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AverageView.layer.borderWidth = 1
-        AverageView.layer.borderColor = UIColor.black.cgColor
-        
         LoadResultsFromCoreData()
         PopulateAverageView()
+        SetupRestartButton()
         
+        AverageView.layer.borderWidth = 1
+        AverageView.layer.borderColor = UIColor.black.cgColor
+
         myTableView.dataSource = self
         myTableView.delegate = self
         self.myTableView.reloadData()
@@ -68,6 +70,16 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         AverageEmotionGraph.color = UIColor(hexString: "#\(Words(rawValue: averageEmotion)!.color)FF")!
         AverageEmotionGraph.fill = averageEmotion
         AverageEmotionLabel.text = Words(rawValue: averageEmotion)?.name
+    }
+    
+    private func SetupRestartButton() {
+        RestartButton.layer.borderWidth = 1
+        RestartButton.layer.borderColor = AverageEmotionGraph.color.cgColor
+        RestartButton.backgroundColor = AverageEmotionGraph.color
+        RestartButton.layer.cornerRadius = 15
+        RestartButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        RestartButton.layer.shadowColor = UIColor.black.cgColor
+        RestartButton.layer.shadowOpacity = 0.2
     }
     
     // MARK: - Table View

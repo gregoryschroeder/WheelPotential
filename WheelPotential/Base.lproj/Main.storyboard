@@ -395,7 +395,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi5-TD-pFc">
                                 <rect key="frame" x="126" y="587" width="122" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Restart"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="RestartTapped:" destination="cu2-E4-x5K" eventType="touchUpInside" id="F56-KS-dbh"/>
                                 </connections>
@@ -481,10 +483,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwP-p5-KH5" userLabel="Average View">
-                                <rect key="frame" x="20" y="510" width="335" height="75"/>
+                                <rect key="frame" x="17" y="510" width="341" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odC-Pe-6UK" userLabel="Average Heading Label">
-                                        <rect key="frame" x="2" y="2" width="331" height="24"/>
+                                        <rect key="frame" x="2" y="2" width="337" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -493,7 +495,7 @@
                                         <rect key="frame" x="2" y="28" width="357" height="17"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-H6-VJp" userLabel="Emotion Label">
-                                        <rect key="frame" x="2" y="47" width="331" height="21"/>
+                                        <rect key="frame" x="2" y="47" width="337" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -518,8 +520,8 @@
                             <constraint firstItem="fi5-TD-pFc" firstAttribute="centerX" secondItem="lqU-8y-xwT" secondAttribute="centerX" id="99D-2w-iPV"/>
                             <constraint firstItem="MwP-p5-KH5" firstAttribute="top" secondItem="BSj-ry-fbA" secondAttribute="bottom" constant="2" id="9lb-ez-hqD"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="top" secondItem="Btu-On-ega" secondAttribute="top" id="BgQ-lG-2Oq"/>
-                            <constraint firstItem="MwP-p5-KH5" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="DjC-5Y-jUI"/>
-                            <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="MwP-p5-KH5" secondAttribute="trailing" constant="20" id="Nyz-nx-zhv"/>
+                            <constraint firstItem="MwP-p5-KH5" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="17" id="DjC-5Y-jUI"/>
+                            <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="MwP-p5-KH5" secondAttribute="trailing" constant="17" id="Nyz-nx-zhv"/>
                             <constraint firstItem="BSj-ry-fbA" firstAttribute="top" secondItem="ghs-CQ-jMa" secondAttribute="bottom" constant="8" id="Paf-Ye-Ebs"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="BSj-ry-fbA" secondAttribute="trailing" constant="20" id="Pan-EV-P37"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="ZRk-qR-cn4"/>
@@ -535,6 +537,7 @@
                         <outlet property="AverageEmotionGraph" destination="fbp-lM-FU9" id="dS9-cG-mTJ"/>
                         <outlet property="AverageEmotionLabel" destination="uE8-H6-VJp" id="l0A-6C-0Bn"/>
                         <outlet property="AverageView" destination="MwP-p5-KH5" id="ChM-H0-TS7"/>
+                        <outlet property="RestartButton" destination="fi5-TD-pFc" id="5BC-CJ-P2C"/>
                         <outlet property="myTableView" destination="BSj-ry-fbA" id="JdU-tT-L3N"/>
                     </connections>
                 </viewController>
