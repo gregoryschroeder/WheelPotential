@@ -123,45 +123,45 @@ enum Words: Int, CaseCountable {
     var value: Int {
         switch self {
         case .Love:
-            return 11
+            return 20
         case .Gratitude:
-            return 10
+            return 19
         case .Joy:
-            return 9
+            return 18
         case .Passion:
-            return 8
+            return 17
         case .Happiness:
-            return 7
+            return 16
         case .Excitement:
-            return 6
+            return 15
         case .JoyfulExpectation:
-            return 5
+            return 14
         case .Hope:
-            return 4
+            return 13
         case .Satisfaction:
-            return 3
+            return 12
         case .Calm:
-            return 2
+            return 11
         case .Boredom:
-            return 1
+            return 10
         case .Annoyance:
-            return -1
+            return 9
         case .Worry:
-            return -2
+            return 8
         case .Blame:
-            return -3
+            return 7
         case .Anger:
-            return -4
+            return 6
         case .Hate:
-            return -5
+            return 5
         case .Resentment:
-            return -6
+            return 4
         case .Guilt:
-            return -7
+            return 3
         case .Depression:
-            return -8
+            return 2
         case .Fear:
-            return -9
+            return 1
         }
     }
     

@@ -76,13 +76,11 @@ import UIKit
     }
     
     private func updateFill() {
-        for (_, view) in fullGraph.enumerated() {
-            view.backgroundColor = UIColor.clear
-        }
-        
         for (index, view) in fullGraph.enumerated() {
-            if (index < fill) {
+            if (index < (20 - fill)) {
                 view.backgroundColor = color
+            } else {
+                view.backgroundColor = UIColor.clear
             }
         }
     }
