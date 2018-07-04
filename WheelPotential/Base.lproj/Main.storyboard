@@ -34,30 +34,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="I08-hs-Jas">
-                                <rect key="frame" x="16" y="84" width="343" height="563"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff2-f8-7g6">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-xK-qau" userLabel="Explanation Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="142.5"/>
-                                        <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other. The first step is to identify the thought by answering the question:</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-no-N7T" userLabel="Question Label">
-                                        <rect key="frame" x="31.5" y="143.5" width="280" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-no-N7T" userLabel="Question Label">
+                                        <rect key="frame" x="0.0" y="160.5" width="335" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awake" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-hk-knA">
-                                        <rect key="frame" x="66.5" y="204.5" width="210" height="202"/>
+                                        <rect key="frame" x="62.5" y="222.5" width="210" height="202"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="210" id="DbQ-nD-jUE"/>
+                                            <constraint firstAttribute="height" constant="202" id="P87-Pt-HNd"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalCompressionResistancePriority="749" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
-                                        <rect key="frame" x="17" y="407.5" width="309" height="104.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalCompressionResistancePriority="749" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
+                                        <rect key="frame" x="0.0" y="426.5" width="335" height="136.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
@@ -70,21 +67,37 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-fA-nW7" userLabel="Blank Label">
-                                        <rect key="frame" x="146.5" y="513" width="50" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-xK-qau" userLabel="Explanation Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="162.5"/>
+                                        <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other. The first step is to identify the thought by answering the question:</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" id="5D6-ab-VwH"/>
+                                    <constraint firstAttribute="bottom" secondItem="XeC-za-voh" secondAttribute="bottom" id="7bR-cf-I7d"/>
+                                    <constraint firstItem="kvM-xK-qau" firstAttribute="bottom" secondItem="g0m-no-N7T" secondAttribute="top" constant="2" id="9GJ-1q-aMv"/>
+                                    <constraint firstItem="f3a-hk-knA" firstAttribute="centerX" secondItem="Ff2-f8-7g6" secondAttribute="centerX" id="Eoo-ll-gtk"/>
+                                    <constraint firstItem="kvM-xK-qau" firstAttribute="top" secondItem="Ff2-f8-7g6" secondAttribute="top" id="IHO-r7-v3d"/>
+                                    <constraint firstAttribute="trailing" secondItem="kvM-xK-qau" secondAttribute="trailing" id="JBk-Jb-1GJ"/>
+                                    <constraint firstItem="kvM-xK-qau" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="Vhd-3f-843"/>
+                                    <constraint firstItem="f3a-hk-knA" firstAttribute="top" secondItem="g0m-no-N7T" secondAttribute="bottom" constant="2" id="WuS-wf-Fh8"/>
+                                    <constraint firstAttribute="trailing" secondItem="g0m-no-N7T" secondAttribute="trailing" id="XCF-ir-Stq"/>
+                                    <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="s4e-M9-vhj"/>
+                                    <constraint firstItem="g0m-no-N7T" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="sCk-JA-MbZ"/>
+                                    <constraint firstItem="XeC-za-voh" firstAttribute="top" secondItem="f3a-hk-knA" secondAttribute="bottom" constant="2" id="yPa-fb-x1o"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="top" secondItem="I08-hs-Jas" secondAttribute="top" constant="-20" id="0q3-iI-bAu"/>
-                            <constraint firstItem="I08-hs-Jas" firstAttribute="bottom" secondItem="MKo-GX-4Z9" secondAttribute="bottom" constant="-20" id="Odb-2C-csq"/>
-                            <constraint firstItem="I08-hs-Jas" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="16" id="kt4-kb-FTn"/>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="I08-hs-Jas" secondAttribute="trailing" constant="16" id="p0Y-62-iNY"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="Ff2-f8-7g6" secondAttribute="trailing" constant="20" id="Cu7-Un-IHo"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="Ff2-f8-7g6" secondAttribute="bottom" constant="20" id="LoG-k4-7DO"/>
+                            <constraint firstItem="Ff2-f8-7g6" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" constant="20" id="Vvc-Sc-7RX"/>
+                            <constraint firstItem="Ff2-f8-7g6" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="eYg-Q0-UAn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
@@ -260,7 +273,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Examples from the bottom of the book pages will go here" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-0n-XKr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Examples from the bottom of the book pages will go here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-0n-XKr">
                                 <rect key="frame" x="16" y="88" width="343" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -387,14 +400,14 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
-                                <rect key="frame" x="20" y="70" width="335" height="477"/>
+                                <rect key="frame" x="20" y="70" width="335" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="75" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="85" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJi-Q2-sRe" id="6uj-4f-Dek">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZgW-8s-yzr">
@@ -466,32 +479,61 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odC-Pe-6UK">
-                                <rect key="frame" x="20" y="555" width="335" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwP-p5-KH5" userLabel="Average View">
+                                <rect key="frame" x="20" y="510" width="335" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odC-Pe-6UK" userLabel="Average Heading Label">
+                                        <rect key="frame" x="2" y="2" width="331" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbp-lM-FU9" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="28" width="357" height="17"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-H6-VJp" userLabel="Emotion Label">
+                                        <rect key="frame" x="2" y="47" width="331" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="odC-Pe-6UK" secondAttribute="trailing" constant="2" id="14E-pz-7dJ"/>
+                                    <constraint firstItem="fbp-lM-FU9" firstAttribute="leading" secondItem="MwP-p5-KH5" secondAttribute="leading" constant="2" id="Fbe-rw-hEz"/>
+                                    <constraint firstAttribute="height" constant="75" id="H5Y-It-Yf4"/>
+                                    <constraint firstItem="fbp-lM-FU9" firstAttribute="top" secondItem="odC-Pe-6UK" secondAttribute="bottom" constant="2" id="NtV-cn-2n9"/>
+                                    <constraint firstItem="uE8-H6-VJp" firstAttribute="top" secondItem="fbp-lM-FU9" secondAttribute="bottom" constant="2" id="V7i-fU-c96"/>
+                                    <constraint firstItem="odC-Pe-6UK" firstAttribute="top" secondItem="MwP-p5-KH5" secondAttribute="top" constant="2" id="Y0a-t1-PZd"/>
+                                    <constraint firstItem="odC-Pe-6UK" firstAttribute="leading" secondItem="MwP-p5-KH5" secondAttribute="leading" constant="2" id="beD-iL-uvA"/>
+                                    <constraint firstItem="uE8-H6-VJp" firstAttribute="leading" secondItem="MwP-p5-KH5" secondAttribute="leading" constant="2" id="nCt-KY-Zuo"/>
+                                    <constraint firstAttribute="trailing" secondItem="uE8-H6-VJp" secondAttribute="trailing" constant="2" id="o9H-JN-eVH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="odC-Pe-6UK" firstAttribute="bottom" secondItem="fi5-TD-pFc" secondAttribute="top" constant="-8" id="0bo-8w-Giq"/>
-                            <constraint firstItem="BSj-ry-fbA" firstAttribute="bottom" secondItem="odC-Pe-6UK" secondAttribute="top" constant="-8" id="2ca-7s-37s"/>
                             <constraint firstItem="fi5-TD-pFc" firstAttribute="centerX" secondItem="lqU-8y-xwT" secondAttribute="centerX" id="99D-2w-iPV"/>
+                            <constraint firstItem="MwP-p5-KH5" firstAttribute="top" secondItem="BSj-ry-fbA" secondAttribute="bottom" constant="2" id="9lb-ez-hqD"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="top" secondItem="Btu-On-ega" secondAttribute="top" id="BgQ-lG-2Oq"/>
-                            <constraint firstItem="odC-Pe-6UK" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="Kqt-0h-94B"/>
+                            <constraint firstItem="MwP-p5-KH5" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="DjC-5Y-jUI"/>
+                            <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="MwP-p5-KH5" secondAttribute="trailing" constant="20" id="Nyz-nx-zhv"/>
                             <constraint firstItem="BSj-ry-fbA" firstAttribute="top" secondItem="ghs-CQ-jMa" secondAttribute="bottom" constant="8" id="Paf-Ye-Ebs"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="BSj-ry-fbA" secondAttribute="trailing" constant="20" id="Pan-EV-P37"/>
-                            <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="odC-Pe-6UK" secondAttribute="trailing" constant="20" id="TnS-fe-mOo"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="ZRk-qR-cn4"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="bottom" secondItem="fi5-TD-pFc" secondAttribute="bottom" constant="20" id="amj-Xh-iKe"/>
                             <constraint firstItem="fi5-TD-pFc" firstAttribute="centerX" secondItem="Btu-On-ega" secondAttribute="centerX" id="fsK-ZC-Va7"/>
                             <constraint firstItem="BSj-ry-fbA" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="mNv-j1-Bef"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="ghs-CQ-jMa" secondAttribute="trailing" constant="20" id="vhe-0J-413"/>
+                            <constraint firstItem="fi5-TD-pFc" firstAttribute="top" secondItem="MwP-p5-KH5" secondAttribute="bottom" constant="2" id="zNN-Ih-159"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Btu-On-ega"/>
                     </view>
                     <connections>
+                        <outlet property="AverageEmotionGraph" destination="fbp-lM-FU9" id="dS9-cG-mTJ"/>
+                        <outlet property="AverageEmotionLabel" destination="uE8-H6-VJp" id="l0A-6C-0Bn"/>
+                        <outlet property="AverageView" destination="MwP-p5-KH5" id="ChM-H0-TS7"/>
                         <outlet property="myTableView" destination="BSj-ry-fbA" id="JdU-tT-L3N"/>
                     </connections>
                 </viewController>

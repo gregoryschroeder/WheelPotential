@@ -13,6 +13,9 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: Properties
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var AverageEmotionGraph: ResultGraphControl!
+    @IBOutlet weak var AverageEmotionLabel: UILabel!
+    @IBOutlet weak var AverageView: UIView!
     
     let context = CoreDataStack.getContext()
     var results: [Results] = []
@@ -20,7 +23,11 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AverageView.layer.borderWidth = 1
+        AverageView.layer.borderColor = UIColor.black.cgColor
+        
         LoadResultsFromCoreData()
+        PopulateAverageView()
         
         myTableView.dataSource = self
         myTableView.delegate = self
@@ -47,6 +54,20 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } catch {
             fatalError("Could not read results from Core Data")
         }
+    }
+    
+    private func PopulateAverageView() {
+        var emotionSum: Int = 0
+        
+        for result in results {
+            emotionSum += Int(result.feeling)
+        }
+        
+        let averageEmotion = emotionSum / results.count
+        
+        AverageEmotionGraph.color = UIColor(hexString: "#\(Words(rawValue: averageEmotion)!.color)FF")!
+        AverageEmotionGraph.fill = averageEmotion
+        AverageEmotionLabel.text = Words(rawValue: averageEmotion)?.name
     }
     
     // MARK: - Table View
@@ -87,14 +108,6 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 cell.ResponseLabel.text = "I did not get what I wanted"
             }
         }
-        
-//        if let emotionName = results[indexPath.row].feeling as Int32? {
-//            if let wordColor = Words(rawValue: Int(emotionName))?.color {
-//                cell.DateLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
-//                cell.EmotionLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
-//                cell.ResponseLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
-//            }
-//        }
         
         return cell
     }
