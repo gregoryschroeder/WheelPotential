@@ -22,6 +22,7 @@
 		0D56F9671FA2B85F001B180A /* ActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56F9661FA2B85F001B180A /* ActionsVC.swift */; };
 		0D56F9691FA2BF09001B180A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56F9681FA2BF09001B180A /* Launch Screen.storyboard */; };
 		0D56F96C1FA2C1A4001B180A /* AnxietyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56F96B1FA2C1A4001B180A /* AnxietyVC.swift */; };
+		0D5D7C6F20ED2B8700BA22AE /* ResultGraphControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D7C6E20ED2B8700BA22AE /* ResultGraphControl.swift */; };
 		0D5DD85C1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D5DD85B1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 */; };
 		0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081A91F9B6EC400849AEA /* Words.swift */; };
 		0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA081AD1F9B752100849AEA /* CaseCount.swift */; };
@@ -93,6 +94,7 @@
 		0D56F9661FA2B85F001B180A /* ActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsVC.swift; sourceTree = "<group>"; };
 		0D56F9681FA2BF09001B180A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0D56F96B1FA2C1A4001B180A /* AnxietyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyVC.swift; sourceTree = "<group>"; };
+		0D5D7C6E20ED2B8700BA22AE /* ResultGraphControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultGraphControl.swift; sourceTree = "<group>"; };
 		0D5DD85B1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WheelPotential_Blu-ray_60_1080i.mpg_1.mp4"; path = "Images/WheelPotential_Blu-ray_60_1080i.mpg_1.mp4"; sourceTree = SOURCE_ROOT; };
 		0DA081A91F9B6EC400849AEA /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		0DA081AD1F9B752100849AEA /* CaseCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCount.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				0DBC9D572071199800DEC6CD /* GraphVC.swift */,
 				0D29F5D02092C5170048EAFB /* ResultCell.swift */,
+				0D5D7C6E20ED2B8700BA22AE /* ResultGraphControl.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */,
 				0D56F9671FA2B85F001B180A /* ActionsVC.swift in Sources */,
+				0D5D7C6F20ED2B8700BA22AE /* ResultGraphControl.swift in Sources */,
 				0D56F96C1FA2C1A4001B180A /* AnxietyVC.swift in Sources */,
 				0DCFE85720ED21A000BC99B9 /* Date.swift in Sources */,
 				0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */,

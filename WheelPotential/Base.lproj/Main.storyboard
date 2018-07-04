@@ -386,162 +386,36 @@
                                     <action selector="RestartTapped:" destination="cu2-E4-x5K" eventType="touchUpInside" id="F56-KS-dbh"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
                                 <rect key="frame" x="20" y="70" width="335" height="477"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="60" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJi-Q2-sRe" id="6uj-4f-Dek">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qhy-Vx-MQH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dab-2a-eKG" userLabel="Graph View">
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="17"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="17"/>
-                                                                    <subviews>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70J-VD-wRq" userLabel="View 1">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57L-0y-Wrg" userLabel="View 2">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-px-ZAE" userLabel="View 3">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjK-uX-4T0" userLabel="View 4">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-rv-UTm" userLabel="View 5">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udD-Eh-iQK" userLabel="View 6">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6u0-JT-hQf" userLabel="View 7">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-W1-7Xi" userLabel="View 8">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-uy-RlZ" userLabel="View 9">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-2B-4nf" userLabel="View 10">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYt-tw-KJJ" userLabel="View 11">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-pR-eTT" userLabel="View 12">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHs-dc-6So" userLabel="View 13">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nmy-qN-rJR" userLabel="View 14">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-ks-itm" userLabel="View 15">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyD-7W-rwU" userLabel="View 16">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNr-oY-UiG" userLabel="View 17">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q47-pw-7mA" userLabel="View 18">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-rn-Atu" userLabel="View 19">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-yt-qN1" userLabel="View 20">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="17"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </view>
-                                                                    </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstItem="Q47-pw-7mA" firstAttribute="leading" secondItem="tNr-oY-UiG" secondAttribute="leading" id="1Sq-et-OLO"/>
-                                                                        <constraint firstItem="CRV-rn-Atu" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="2id-8d-fuR"/>
-                                                                        <constraint firstItem="6u0-JT-hQf" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="3pR-7F-SoX"/>
-                                                                        <constraint firstItem="Nmy-qN-rJR" firstAttribute="leading" secondItem="tHs-dc-6So" secondAttribute="leading" id="4hX-XO-b0o"/>
-                                                                        <constraint firstItem="Nmy-qN-rJR" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="85w-WD-9Dq"/>
-                                                                        <constraint firstItem="Wkq-uy-RlZ" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="BBa-3Z-QoE"/>
-                                                                        <constraint firstItem="RjK-uX-4T0" firstAttribute="leading" secondItem="tGE-px-ZAE" secondAttribute="leading" id="C61-Og-Ba1"/>
-                                                                        <constraint firstItem="hOR-W1-7Xi" firstAttribute="leading" secondItem="6u0-JT-hQf" secondAttribute="leading" id="CXp-60-r2N"/>
-                                                                        <constraint firstItem="LPF-ks-itm" firstAttribute="leading" secondItem="Nmy-qN-rJR" secondAttribute="leading" id="CiH-0F-h7Z"/>
-                                                                        <constraint firstItem="Q47-pw-7mA" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="EtO-0f-KW9"/>
-                                                                        <constraint firstItem="Wkq-uy-RlZ" firstAttribute="leading" secondItem="hOR-W1-7Xi" secondAttribute="leading" id="FGr-sj-3Bs"/>
-                                                                        <constraint firstItem="udD-Eh-iQK" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="IxP-2r-5du"/>
-                                                                        <constraint firstItem="udD-Eh-iQK" firstAttribute="leading" secondItem="XTM-rv-UTm" secondAttribute="leading" id="KF0-ki-LEs"/>
-                                                                        <constraint firstItem="70J-VD-wRq" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="LFB-wI-tsD"/>
-                                                                        <constraint firstItem="hOR-W1-7Xi" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="LXS-0k-Nkj"/>
-                                                                        <constraint firstItem="LPF-ks-itm" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="NIV-s6-CMs"/>
-                                                                        <constraint firstItem="lYt-tw-KJJ" firstAttribute="leading" secondItem="C6Q-2B-4nf" secondAttribute="leading" id="PYO-Z9-vny"/>
-                                                                        <constraint firstItem="OyD-7W-rwU" firstAttribute="leading" secondItem="LPF-ks-itm" secondAttribute="leading" id="Q0y-nq-CfG"/>
-                                                                        <constraint firstItem="CRV-rn-Atu" firstAttribute="leading" secondItem="Q47-pw-7mA" secondAttribute="leading" id="W8b-B5-gYp"/>
-                                                                        <constraint firstItem="70J-VD-wRq" firstAttribute="leading" secondItem="IHK-1U-9yM" secondAttribute="leading" id="Y9k-wz-E3M"/>
-                                                                        <constraint firstItem="tHs-dc-6So" firstAttribute="leading" secondItem="VZd-pR-eTT" secondAttribute="leading" id="ZC5-sQ-iPZ"/>
-                                                                        <constraint firstItem="RjK-uX-4T0" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="eZy-2j-1rU"/>
-                                                                        <constraint firstItem="tGE-px-ZAE" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="elt-0r-wdS"/>
-                                                                        <constraint firstItem="VZd-pR-eTT" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="iLM-4t-5oP"/>
-                                                                        <constraint firstItem="XTM-rv-UTm" firstAttribute="leading" secondItem="RjK-uX-4T0" secondAttribute="leading" id="k9w-tc-8lW"/>
-                                                                        <constraint firstItem="57L-0y-Wrg" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="lOG-yV-ioz"/>
-                                                                        <constraint firstItem="6u0-JT-hQf" firstAttribute="leading" secondItem="udD-Eh-iQK" secondAttribute="leading" id="lgB-mT-M0U"/>
-                                                                        <constraint firstItem="XTM-rv-UTm" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="nFh-ZN-Dng"/>
-                                                                        <constraint firstItem="tNr-oY-UiG" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="oTL-Xb-DFt"/>
-                                                                        <constraint firstItem="OyD-7W-rwU" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="oW3-Y2-VUO"/>
-                                                                        <constraint firstItem="C6Q-2B-4nf" firstAttribute="leading" secondItem="Wkq-uy-RlZ" secondAttribute="leading" id="pkQ-rX-Diz"/>
-                                                                        <constraint firstItem="VZd-pR-eTT" firstAttribute="leading" secondItem="lYt-tw-KJJ" secondAttribute="leading" id="r18-Xo-bYs"/>
-                                                                        <constraint firstItem="57L-0y-Wrg" firstAttribute="leading" secondItem="70J-VD-wRq" secondAttribute="leading" id="sho-qC-hMQ"/>
-                                                                        <constraint firstItem="tNr-oY-UiG" firstAttribute="leading" secondItem="OyD-7W-rwU" secondAttribute="leading" id="txK-ig-akl"/>
-                                                                        <constraint firstItem="O1X-yt-qN1" firstAttribute="leading" secondItem="CRV-rn-Atu" secondAttribute="leading" id="uaL-jy-iFY"/>
-                                                                        <constraint firstItem="tGE-px-ZAE" firstAttribute="leading" secondItem="57L-0y-Wrg" secondAttribute="leading" id="xAj-Co-9bp"/>
-                                                                        <constraint firstItem="lYt-tw-KJJ" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="y8z-Me-504"/>
-                                                                        <constraint firstItem="tHs-dc-6So" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="yG5-J1-QqA"/>
-                                                                        <constraint firstItem="C6Q-2B-4nf" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="yH2-29-Hcj"/>
-                                                                        <constraint firstItem="O1X-yt-qN1" firstAttribute="centerY" secondItem="IHK-1U-9yM" secondAttribute="centerY" id="zvp-Ls-Ea6"/>
-                                                                    </constraints>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM" userLabel="Result Graph" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="459" height="22"/>
                                                                 </stackView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="IHK-1U-9yM" secondAttribute="trailing" id="EDs-z2-DQp"/>
                                                                 <constraint firstItem="IHK-1U-9yM" firstAttribute="top" secondItem="Dab-2a-eKG" secondAttribute="top" id="Le5-gm-hnC"/>
-                                                                <constraint firstItem="IHK-1U-9yM" firstAttribute="leading" secondItem="Dab-2a-eKG" secondAttribute="leading" id="QTL-LC-Aeh"/>
                                                                 <constraint firstAttribute="height" constant="17" id="RGd-gJ-3Ot"/>
-                                                                <constraint firstAttribute="bottom" secondItem="IHK-1U-9yM" secondAttribute="bottom" id="Y5K-qR-Z0W"/>
+                                                                <constraint firstItem="IHK-1U-9yM" firstAttribute="leading" secondItem="Dab-2a-eKG" secondAttribute="leading" id="xY8-92-VSa"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdM-iE-EXN" userLabel="Text View">
-                                                            <rect key="frame" x="0.0" y="17" width="335" height="27"/>
+                                                            <rect key="frame" x="0.0" y="17" width="335" height="43"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b5-d1-kNE" userLabel="Date Label">
                                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -598,6 +472,7 @@
                                             <outlet property="DateLabel" destination="4b5-d1-kNE" id="Ek8-CG-Ify"/>
                                             <outlet property="EmotionLabel" destination="xml-jd-h2J" id="c6e-1d-a0u"/>
                                             <outlet property="ResponseLabel" destination="ydq-wP-8mX" id="FRd-Lk-ldi"/>
+                                            <outlet property="ResultGraph" destination="IHK-1U-9yM" id="mAS-W0-TxO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

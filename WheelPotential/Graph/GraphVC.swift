@@ -58,8 +58,8 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as! ResultCell
         
-        if let resultName = results[indexPath.row].feeling as Int32? {
-            if let wordText = Words(rawValue: Int(resultName))?.name {
+        if let emotionName = results[indexPath.row].feeling as Int32? {
+            if let wordText = Words(rawValue: Int(emotionName))?.name {
                 cell.EmotionLabel.text = wordText
             } else {
                 cell.EmotionLabel.text = "Invalid word"
@@ -73,10 +73,20 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell.DateLabel.text = dateString
         }
         
-        if let wordColor = Words(rawValue: indexPath.row)?.color {
-            cell.DateLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
-            cell.EmotionLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
-            cell.ResponseLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+        if let responseName = results[indexPath.row].result as Bool? {
+            if responseName == true {
+                cell.ResponseLabel.text = "I got what I wanted"
+            } else {
+                cell.ResponseLabel.text = "I did not get what I wanted"
+            }
+        }
+        
+        if let emotionName = results[indexPath.row].feeling as Int32? {
+            if let wordColor = Words(rawValue: Int(emotionName))?.color {
+                cell.DateLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+                cell.EmotionLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+                cell.ResponseLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+            }
         }
         
         return cell
