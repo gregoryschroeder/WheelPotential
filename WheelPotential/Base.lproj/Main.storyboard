@@ -34,17 +34,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff2-f8-7g6">
-                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-TQ-RvQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-xK-qau" userLabel="Explanation Label">
+                                        <rect key="frame" x="20" y="20" width="335" height="162.5"/>
+                                        <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other. The first step is to identify the thought by answering the question:</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-no-N7T" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="160.5" width="335" height="60"/>
+                                        <rect key="frame" x="20" y="187.5" width="335" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awake" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-hk-knA">
-                                        <rect key="frame" x="62.5" y="222.5" width="210" height="202"/>
+                                        <rect key="frame" x="82" y="249.5" width="210" height="202"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
@@ -54,7 +61,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalCompressionResistancePriority="749" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
-                                        <rect key="frame" x="0.0" y="426.5" width="335" height="136.5"/>
+                                        <rect key="frame" x="20" y="456.5" width="335" height="81.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
@@ -67,37 +74,31 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-xK-qau" userLabel="Explanation Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="162.5"/>
-                                        <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other. The first step is to identify the thought by answering the question:</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" id="5D6-ab-VwH"/>
-                                    <constraint firstAttribute="bottom" secondItem="XeC-za-voh" secondAttribute="bottom" id="7bR-cf-I7d"/>
-                                    <constraint firstItem="kvM-xK-qau" firstAttribute="bottom" secondItem="g0m-no-N7T" secondAttribute="top" constant="2" id="9GJ-1q-aMv"/>
-                                    <constraint firstItem="f3a-hk-knA" firstAttribute="centerX" secondItem="Ff2-f8-7g6" secondAttribute="centerX" id="Eoo-ll-gtk"/>
-                                    <constraint firstItem="kvM-xK-qau" firstAttribute="top" secondItem="Ff2-f8-7g6" secondAttribute="top" id="IHO-r7-v3d"/>
-                                    <constraint firstAttribute="trailing" secondItem="kvM-xK-qau" secondAttribute="trailing" id="JBk-Jb-1GJ"/>
-                                    <constraint firstItem="kvM-xK-qau" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="Vhd-3f-843"/>
-                                    <constraint firstItem="f3a-hk-knA" firstAttribute="top" secondItem="g0m-no-N7T" secondAttribute="bottom" constant="2" id="WuS-wf-Fh8"/>
-                                    <constraint firstAttribute="trailing" secondItem="g0m-no-N7T" secondAttribute="trailing" id="XCF-ir-Stq"/>
-                                    <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="s4e-M9-vhj"/>
-                                    <constraint firstItem="g0m-no-N7T" firstAttribute="leading" secondItem="Ff2-f8-7g6" secondAttribute="leading" id="sCk-JA-MbZ"/>
-                                    <constraint firstItem="XeC-za-voh" firstAttribute="top" secondItem="f3a-hk-knA" secondAttribute="bottom" constant="2" id="yPa-fb-x1o"/>
+                                    <constraint firstAttribute="trailing" secondItem="kvM-xK-qau" secondAttribute="trailing" constant="20" id="EpC-GD-dXO"/>
+                                    <constraint firstItem="XeC-za-voh" firstAttribute="top" secondItem="f3a-hk-knA" secondAttribute="bottom" constant="5" id="IJm-dK-4h2"/>
+                                    <constraint firstAttribute="bottom" secondItem="XeC-za-voh" secondAttribute="bottom" constant="20" id="Y0m-WP-7Fu"/>
+                                    <constraint firstItem="kvM-xK-qau" firstAttribute="top" secondItem="ZTa-TQ-RvQ" secondAttribute="top" constant="20" id="rRs-9z-kBB"/>
+                                    <constraint firstItem="kvM-xK-qau" firstAttribute="leading" secondItem="ZTa-TQ-RvQ" secondAttribute="leading" constant="20" id="tjF-Wk-xrr"/>
+                                    <constraint firstItem="f3a-hk-knA" firstAttribute="top" secondItem="g0m-no-N7T" secondAttribute="bottom" constant="2" id="vhg-dA-SHi"/>
+                                    <constraint firstItem="g0m-no-N7T" firstAttribute="top" secondItem="kvM-xK-qau" secondAttribute="bottom" constant="5" id="xYh-OV-6kd"/>
                                 </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="Ff2-f8-7g6" secondAttribute="trailing" constant="20" id="Cu7-Un-IHo"/>
-                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="Ff2-f8-7g6" secondAttribute="bottom" constant="20" id="LoG-k4-7DO"/>
-                            <constraint firstItem="Ff2-f8-7g6" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" constant="20" id="Vvc-Sc-7RX"/>
-                            <constraint firstItem="Ff2-f8-7g6" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="eYg-Q0-UAn"/>
+                            <constraint firstItem="g0m-no-N7T" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="ARM-WB-TCX"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="XeC-za-voh" secondAttribute="trailing" constant="20" id="VfV-jM-cAh"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="bottom" secondItem="ZTa-TQ-RvQ" secondAttribute="bottom" id="a1m-tz-OMw"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="g0m-no-N7T" secondAttribute="trailing" constant="20" id="aDJ-se-vEZ"/>
+                            <constraint firstItem="ZTa-TQ-RvQ" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" id="d2y-aB-M0d"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="ZTa-TQ-RvQ" secondAttribute="trailing" id="d4w-5i-lC6"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="kvM-xK-qau" secondAttribute="trailing" constant="20" id="deb-i3-Cpr"/>
+                            <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="edM-g0-NYW"/>
+                            <constraint firstItem="kvM-xK-qau" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="kbs-BK-FpP"/>
+                            <constraint firstItem="ZTa-TQ-RvQ" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" id="mGe-nm-YoO"/>
+                            <constraint firstItem="f3a-hk-knA" firstAttribute="centerX" secondItem="MKo-GX-4Z9" secondAttribute="centerX" id="qld-ti-3Bu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
