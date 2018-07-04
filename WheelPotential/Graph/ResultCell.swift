@@ -10,6 +10,10 @@ import UIKit
 
 class ResultCell: UITableViewCell {
     
+    @IBOutlet weak var DateLabel: UILabel!
+    @IBOutlet weak var EmotionLabel: UILabel!
+    @IBOutlet weak var ResponseLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

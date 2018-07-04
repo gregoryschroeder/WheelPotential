@@ -56,25 +56,28 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as! ResultCell
         
         if let resultName = results[indexPath.row].feeling as Int32? {
             if let wordText = Words(rawValue: Int(resultName))?.name {
-                cell.textLabel?.text = wordText
+                cell.EmotionLabel.text = wordText
             } else {
-                cell.textLabel?.text = "Invalid word"
+                cell.EmotionLabel.text = "Invalid word"
             }
         } else {
-            cell.textLabel?.text = "No result"
+            cell.EmotionLabel.text = "No result"
         }
         
-//        if let wordText = Words(rawValue: indexPath.row)?.name {
-//            cell.Word.text = wordText
-//        }
-//
-//        if let wordColor = Words(rawValue: indexPath.row)?.color {
-//            cell.Word.textColor = UIColor(hexString: "#\(wordColor)FF")
-//        }
+        if let responseDate = results[indexPath.row].date as Date? {
+            let dateString = responseDate.toString(dateFormat: "MMM/dd/yyyy")
+            cell.DateLabel.text = dateString
+        }
+        
+        if let wordColor = Words(rawValue: indexPath.row)?.color {
+            cell.DateLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+            cell.EmotionLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+            cell.ResponseLabel.textColor = UIColor(hexString: "#\(wordColor)FF")
+        }
         
         return cell
     }

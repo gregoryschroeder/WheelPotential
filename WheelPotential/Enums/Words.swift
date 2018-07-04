@@ -24,12 +24,10 @@ enum Words: Int, CaseCountable {
     case Worry
     case Blame
     case Anger
-    case Revenge
     case Hate
     case Resentment
     case Guilt
     case Depression
-    case Apathy
     case Fear
     
     var name: String {
@@ -64,8 +62,6 @@ enum Words: Int, CaseCountable {
             return "Blame"
         case .Anger:
             return "Anger"
-        case .Revenge:
-            return "Revenge"
         case .Hate:
             return "Hate"
         case .Resentment:
@@ -74,8 +70,6 @@ enum Words: Int, CaseCountable {
             return "Guilt"
         case .Depression:
             return "Depression"
-        case .Apathy:
-            return "Apathy"
         case .Fear:
             return "Fear"
         }
@@ -113,8 +107,6 @@ enum Words: Int, CaseCountable {
             return "F7941D"
         case .Anger:
             return "FBBEA7"
-        case .Revenge:
-            return "F9AA8F"
         case .Hate:
             return "F69679"
         case .Resentment:
@@ -123,8 +115,6 @@ enum Words: Int, CaseCountable {
             return "F37053"
         case .Depression:
             return "F15B40"
-        case .Apathy:
-            return "EF4130"
         case .Fear:
             return "ED1C24"
         }
@@ -162,20 +152,16 @@ enum Words: Int, CaseCountable {
             return -3
         case .Anger:
             return -4
-        case .Revenge:
-            return -5
         case .Hate:
-            return -6
+            return -5
         case .Resentment:
-            return -7
+            return -6
         case .Guilt:
-            return -8
+            return -7
         case .Depression:
-            return -9
-        case .Apathy:
-            return -10
+            return -8
         case .Fear:
-            return -11
+            return -9
         }
     }
     

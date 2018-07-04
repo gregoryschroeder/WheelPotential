@@ -51,6 +51,7 @@
 		0DCFE3021FD3472F00102DC8 /* Depression.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3011FD3472F00102DC8 /* Depression.txt */; };
 		0DCFE3041FD3474100102DC8 /* Apathy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3031FD3474100102DC8 /* Apathy.txt */; };
 		0DCFE3061FD3475600102DC8 /* Fear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3051FD3475600102DC8 /* Fear.txt */; };
+		0DCFE85720ED21A000BC99B9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFE85620ED21A000BC99B9 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		0DCFE3011FD3472F00102DC8 /* Depression.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Depression.txt; sourceTree = "<group>"; };
 		0DCFE3031FD3474100102DC8 /* Apathy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Apathy.txt; sourceTree = "<group>"; };
 		0DCFE3051FD3475600102DC8 /* Fear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fear.txt; sourceTree = "<group>"; };
+		0DCFE85620ED21A000BC99B9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				0DA081B21F9B849100849AEA /* UIColor.swift */,
+				0DCFE85620ED21A000BC99B9 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				0DA081AA1F9B6EC400849AEA /* Words.swift in Sources */,
 				0D56F9671FA2B85F001B180A /* ActionsVC.swift in Sources */,
 				0D56F96C1FA2C1A4001B180A /* AnxietyVC.swift in Sources */,
+				0DCFE85720ED21A000BC99B9 /* Date.swift in Sources */,
 				0D30D2EC1F9AAE0200609DCE /* CoreDataStack.swift in Sources */,
 				0D16449A1FAE5A410090F930 /* DisclaimerVC.swift in Sources */,
 				0DA081AE1F9B752100849AEA /* CaseCount.swift in Sources */,
@@ -678,10 +682,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WheelPotential/WheelPotential.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V88RN2WX6K;
+				DEVELOPMENT_TEAM = 2926745ZP6;
 				INFOPLIST_FILE = WheelPotential/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WheelPotential;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schroederstudios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -694,10 +698,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WheelPotential/WheelPotential.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V88RN2WX6K;
+				DEVELOPMENT_TEAM = 2926745ZP6;
 				INFOPLIST_FILE = WheelPotential/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WheelPotential;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schroederstudios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
