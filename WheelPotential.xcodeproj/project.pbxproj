@@ -53,6 +53,28 @@
 		0DCFE3041FD3474100102DC8 /* Apathy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3031FD3474100102DC8 /* Apathy.txt */; };
 		0DCFE3061FD3475600102DC8 /* Fear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFE3051FD3475600102DC8 /* Fear.txt */; };
 		0DCFE85720ED21A000BC99B9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFE85620ED21A000BC99B9 /* Date.swift */; };
+		0DDAB3E720EEE0FB00DC5DE8 /* Action - Anger.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3E620EEE0FB00DC5DE8 /* Action - Anger.txt */; };
+		0DDAB3E920EEE10E00DC5DE8 /* Action - Annoyance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3E820EEE10E00DC5DE8 /* Action - Annoyance.txt */; };
+		0DDAB3EB20EEE11900DC5DE8 /* Action - Apathy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3EA20EEE11900DC5DE8 /* Action - Apathy.txt */; };
+		0DDAB3ED20EEE12600DC5DE8 /* Action - Blame.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3EC20EEE12600DC5DE8 /* Action - Blame.txt */; };
+		0DDAB3EF20EEE12F00DC5DE8 /* Action - Calm.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3EE20EEE12F00DC5DE8 /* Action - Calm.txt */; };
+		0DDAB3F120EEE13800DC5DE8 /* Action - Depression.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3F020EEE13800DC5DE8 /* Action - Depression.txt */; };
+		0DDAB3F320EEE14400DC5DE8 /* Action - Excitement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3F220EEE14400DC5DE8 /* Action - Excitement.txt */; };
+		0DDAB3F520EEE14D00DC5DE8 /* Action - Fear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3F420EEE14D00DC5DE8 /* Action - Fear.txt */; };
+		0DDAB3F720EEE15A00DC5DE8 /* Action - Gratitude.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3F620EEE15A00DC5DE8 /* Action - Gratitude.txt */; };
+		0DDAB3F920EEE16200DC5DE8 /* Action - Guilt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3F820EEE16200DC5DE8 /* Action - Guilt.txt */; };
+		0DDAB3FB20EEE17000DC5DE8 /* Action - Happiness.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3FA20EEE17000DC5DE8 /* Action - Happiness.txt */; };
+		0DDAB3FD20EEE17700DC5DE8 /* Action - Hate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3FC20EEE17700DC5DE8 /* Action - Hate.txt */; };
+		0DDAB3FF20EEE18000DC5DE8 /* Action - Hope.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB3FE20EEE18000DC5DE8 /* Action - Hope.txt */; };
+		0DDAB40120EEE18900DC5DE8 /* Action - Joy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40020EEE18900DC5DE8 /* Action - Joy.txt */; };
+		0DDAB40320EEE19600DC5DE8 /* Action - Joyful Expectation.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40220EEE19600DC5DE8 /* Action - Joyful Expectation.txt */; };
+		0DDAB40520EEE19F00DC5DE8 /* Action - Love.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40420EEE19F00DC5DE8 /* Action - Love.txt */; };
+		0DDAB40720EEE1A700DC5DE8 /* Action - Passion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40620EEE1A700DC5DE8 /* Action - Passion.txt */; };
+		0DDAB40920EEE1B100DC5DE8 /* Action - Resentment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40820EEE1B100DC5DE8 /* Action - Resentment.txt */; };
+		0DDAB40B20EEE1BC00DC5DE8 /* Action - Revenge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40A20EEE1BC00DC5DE8 /* Action - Revenge.txt */; };
+		0DDAB40D20EEE1C600DC5DE8 /* Action - Satisfaction.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40C20EEE1C600DC5DE8 /* Action - Satisfaction.txt */; };
+		0DDAB40F20EEE1CD00DC5DE8 /* Action - Worry.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB40E20EEE1CD00DC5DE8 /* Action - Worry.txt */; };
+		0DDAB41120EEE31200DC5DE8 /* Action - Boredom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAB41020EEE31200DC5DE8 /* Action - Boredom.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +148,28 @@
 		0DCFE3031FD3474100102DC8 /* Apathy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Apathy.txt; sourceTree = "<group>"; };
 		0DCFE3051FD3475600102DC8 /* Fear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fear.txt; sourceTree = "<group>"; };
 		0DCFE85620ED21A000BC99B9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		0DDAB3E620EEE0FB00DC5DE8 /* Action - Anger.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Anger.txt"; sourceTree = "<group>"; };
+		0DDAB3E820EEE10E00DC5DE8 /* Action - Annoyance.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Annoyance.txt"; sourceTree = "<group>"; };
+		0DDAB3EA20EEE11900DC5DE8 /* Action - Apathy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Apathy.txt"; sourceTree = "<group>"; };
+		0DDAB3EC20EEE12600DC5DE8 /* Action - Blame.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Blame.txt"; sourceTree = "<group>"; };
+		0DDAB3EE20EEE12F00DC5DE8 /* Action - Calm.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Calm.txt"; sourceTree = "<group>"; };
+		0DDAB3F020EEE13800DC5DE8 /* Action - Depression.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Depression.txt"; sourceTree = "<group>"; };
+		0DDAB3F220EEE14400DC5DE8 /* Action - Excitement.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Excitement.txt"; sourceTree = "<group>"; };
+		0DDAB3F420EEE14D00DC5DE8 /* Action - Fear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Fear.txt"; sourceTree = "<group>"; };
+		0DDAB3F620EEE15A00DC5DE8 /* Action - Gratitude.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Gratitude.txt"; sourceTree = "<group>"; };
+		0DDAB3F820EEE16200DC5DE8 /* Action - Guilt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Guilt.txt"; sourceTree = "<group>"; };
+		0DDAB3FA20EEE17000DC5DE8 /* Action - Happiness.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Happiness.txt"; sourceTree = "<group>"; };
+		0DDAB3FC20EEE17700DC5DE8 /* Action - Hate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Hate.txt"; sourceTree = "<group>"; };
+		0DDAB3FE20EEE18000DC5DE8 /* Action - Hope.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Hope.txt"; sourceTree = "<group>"; };
+		0DDAB40020EEE18900DC5DE8 /* Action - Joy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Joy.txt"; sourceTree = "<group>"; };
+		0DDAB40220EEE19600DC5DE8 /* Action - Joyful Expectation.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Joyful Expectation.txt"; sourceTree = "<group>"; };
+		0DDAB40420EEE19F00DC5DE8 /* Action - Love.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Love.txt"; sourceTree = "<group>"; };
+		0DDAB40620EEE1A700DC5DE8 /* Action - Passion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Passion.txt"; sourceTree = "<group>"; };
+		0DDAB40820EEE1B100DC5DE8 /* Action - Resentment.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Resentment.txt"; sourceTree = "<group>"; };
+		0DDAB40A20EEE1BC00DC5DE8 /* Action - Revenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Revenge.txt"; sourceTree = "<group>"; };
+		0DDAB40C20EEE1C600DC5DE8 /* Action - Satisfaction.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Satisfaction.txt"; sourceTree = "<group>"; };
+		0DDAB40E20EEE1CD00DC5DE8 /* Action - Worry.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Worry.txt"; sourceTree = "<group>"; };
+		0DDAB41020EEE31200DC5DE8 /* Action - Boredom.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Action - Boredom.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +290,7 @@
 		0D4EFB111F85B1F900A18A8C /* Wheel */ = {
 			isa = PBXGroup;
 			children = (
+				0DDAB3E520EEE0C100DC5DE8 /* Action Files */,
 				0DCFE2DA1FD3448F00102DC8 /* Definition Files */,
 				0D4EFB121F85B21400A18A8C /* WheelVC.swift */,
 				0DA081AF1F9B76D000849AEA /* WordCell.swift */,
@@ -339,6 +384,35 @@
 				0DCFE2F31FD346A900102DC8 /* Worry.txt */,
 			);
 			path = "Definition Files";
+			sourceTree = "<group>";
+		};
+		0DDAB3E520EEE0C100DC5DE8 /* Action Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DDAB3E620EEE0FB00DC5DE8 /* Action - Anger.txt */,
+				0DDAB3E820EEE10E00DC5DE8 /* Action - Annoyance.txt */,
+				0DDAB3EA20EEE11900DC5DE8 /* Action - Apathy.txt */,
+				0DDAB3EC20EEE12600DC5DE8 /* Action - Blame.txt */,
+				0DDAB41020EEE31200DC5DE8 /* Action - Boredom.txt */,
+				0DDAB3EE20EEE12F00DC5DE8 /* Action - Calm.txt */,
+				0DDAB3F020EEE13800DC5DE8 /* Action - Depression.txt */,
+				0DDAB3F220EEE14400DC5DE8 /* Action - Excitement.txt */,
+				0DDAB3F420EEE14D00DC5DE8 /* Action - Fear.txt */,
+				0DDAB3F620EEE15A00DC5DE8 /* Action - Gratitude.txt */,
+				0DDAB3F820EEE16200DC5DE8 /* Action - Guilt.txt */,
+				0DDAB3FA20EEE17000DC5DE8 /* Action - Happiness.txt */,
+				0DDAB3FC20EEE17700DC5DE8 /* Action - Hate.txt */,
+				0DDAB3FE20EEE18000DC5DE8 /* Action - Hope.txt */,
+				0DDAB40020EEE18900DC5DE8 /* Action - Joy.txt */,
+				0DDAB40220EEE19600DC5DE8 /* Action - Joyful Expectation.txt */,
+				0DDAB40420EEE19F00DC5DE8 /* Action - Love.txt */,
+				0DDAB40620EEE1A700DC5DE8 /* Action - Passion.txt */,
+				0DDAB40820EEE1B100DC5DE8 /* Action - Resentment.txt */,
+				0DDAB40A20EEE1BC00DC5DE8 /* Action - Revenge.txt */,
+				0DDAB40C20EEE1C600DC5DE8 /* Action - Satisfaction.txt */,
+				0DDAB40E20EEE1CD00DC5DE8 /* Action - Worry.txt */,
+			);
+			path = "Action Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,17 +530,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDAB3ED20EEE12600DC5DE8 /* Action - Blame.txt in Resources */,
+				0DDAB3F720EEE15A00DC5DE8 /* Action - Gratitude.txt in Resources */,
 				0DCFE2F61FD346BE00102DC8 /* Blame.txt in Resources */,
 				0D5DD85C1FB664AC004B51BB /* WheelPotential_Blu-ray_60_1080i.mpg_1.mp4 in Resources */,
 				0DCFE2FC1FD346F600102DC8 /* Hate.txt in Resources */,
+				0DDAB40920EEE1B100DC5DE8 /* Action - Resentment.txt in Resources */,
 				0DCFE2E01FD3456000102DC8 /* Joy.txt in Resources */,
 				0DCFE2F81FD346D200102DC8 /* Anger.txt in Resources */,
 				0DCFE2FE1FD3470900102DC8 /* Resentment.txt in Resources */,
 				0DCFE2F01FD3467D00102DC8 /* Boredom.txt in Resources */,
 				0DCFE2EC1FD3464B00102DC8 /* Satisfaction.txt in Resources */,
+				0DDAB3FD20EEE17700DC5DE8 /* Action - Hate.txt in Resources */,
+				0DDAB3FB20EEE17000DC5DE8 /* Action - Happiness.txt in Resources */,
 				0DCFE3041FD3474100102DC8 /* Apathy.txt in Resources */,
+				0DDAB3E720EEE0FB00DC5DE8 /* Action - Anger.txt in Resources */,
 				0DCFE2EA1FD3462C00102DC8 /* Hope.txt in Resources */,
 				0DCFE2DC1FD344A900102DC8 /* Gratitude.txt in Resources */,
+				0DDAB41120EEE31200DC5DE8 /* Action - Boredom.txt in Resources */,
 				0DCFE2DE1FD344BD00102DC8 /* Love.txt in Resources */,
 				0DCFE3061FD3475600102DC8 /* Fear.txt in Resources */,
 				0DCFE2FA1FD346E500102DC8 /* Revenge.txt in Resources */,
@@ -474,12 +555,27 @@
 				0DCFE2F21FD3469000102DC8 /* Annoyance.txt in Resources */,
 				0DCFE2E61FD345F200102DC8 /* Excitement.txt in Resources */,
 				0DCFE2F41FD346A900102DC8 /* Worry.txt in Resources */,
+				0DDAB40D20EEE1C600DC5DE8 /* Action - Satisfaction.txt in Resources */,
+				0DDAB40B20EEE1BC00DC5DE8 /* Action - Revenge.txt in Resources */,
+				0DDAB40120EEE18900DC5DE8 /* Action - Joy.txt in Resources */,
+				0DDAB3F520EEE14D00DC5DE8 /* Action - Fear.txt in Resources */,
 				0DCFE3021FD3472F00102DC8 /* Depression.txt in Resources */,
+				0DDAB40520EEE19F00DC5DE8 /* Action - Love.txt in Resources */,
 				0D4EFAEB1F85B17500A18A8C /* Assets.xcassets in Resources */,
 				0DCFE2E81FD3460B00102DC8 /* Joyful Expectation.txt in Resources */,
+				0DDAB40320EEE19600DC5DE8 /* Action - Joyful Expectation.txt in Resources */,
+				0DDAB3EB20EEE11900DC5DE8 /* Action - Apathy.txt in Resources */,
+				0DDAB3F120EEE13800DC5DE8 /* Action - Depression.txt in Resources */,
 				0D56F9691FA2BF09001B180A /* Launch Screen.storyboard in Resources */,
+				0DDAB3F920EEE16200DC5DE8 /* Action - Guilt.txt in Resources */,
+				0DDAB3E920EEE10E00DC5DE8 /* Action - Annoyance.txt in Resources */,
+				0DDAB3FF20EEE18000DC5DE8 /* Action - Hope.txt in Resources */,
+				0DDAB3F320EEE14400DC5DE8 /* Action - Excitement.txt in Resources */,
 				0DCFE2E21FD345A600102DC8 /* Passion.txt in Resources */,
+				0DDAB40F20EEE1CD00DC5DE8 /* Action - Worry.txt in Resources */,
 				0D4EFAE61F85B17500A18A8C /* Main.storyboard in Resources */,
+				0DDAB3EF20EEE12F00DC5DE8 /* Action - Calm.txt in Resources */,
+				0DDAB40720EEE1A700DC5DE8 /* Action - Passion.txt in Resources */,
 				0DCFE2E41FD345CB00102DC8 /* Happiness.txt in Resources */,
 				0DCFE2EE1FD3466500102DC8 /* Calm.txt in Resources */,
 			);

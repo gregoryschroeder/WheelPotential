@@ -277,7 +277,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-2w-kfV" userLabel="Title Label">
                                 <rect key="frame" x="20" y="84" width="335" height="122"/>
                                 <string key="text">Now it's time to take some action. Below are a few examples of some positive actions that you could take in response to your feeling. But remember, these are only suggestions and we encourage you to create your own actions!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -326,6 +326,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="StepsLabel" destination="QS2-0n-XKr" id="ZbH-I6-pL6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98f-6d-82l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

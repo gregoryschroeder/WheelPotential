@@ -12,6 +12,7 @@ class ActionsVC: UIViewController {
     
     // MARK: - Properties
     var selectedWord: Words?
+    @IBOutlet weak var StepsLabel: UILabel!
     
     // MARK: - Initializer
     override func viewDidLoad() {
@@ -19,6 +20,18 @@ class ActionsVC: UIViewController {
         
         if let word = selectedWord?.name {
             navigationItem.title = word
+        }
+        
+        if let filepath = Bundle.main.path(forResource: "Action - \(selectedWord!.name)", ofType: "txt") {
+            do {
+                let definition = try String(contentsOfFile: filepath)
+                StepsLabel.text = definition
+            } catch {
+                fatalError("Could not read the definition file.")
+            }
+        } else {
+            // TODO: Handle file not found error
+            fatalError("Definition file not found.")
         }
     }
     
