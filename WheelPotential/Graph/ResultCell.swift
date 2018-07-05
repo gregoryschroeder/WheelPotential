@@ -14,9 +14,4 @@ class ResultCell: UITableViewCell {
     @IBOutlet weak var EmotionLabel: UILabel!
     @IBOutlet weak var ResponseLabel: UILabel!
     @IBOutlet weak var ResultGraph: ResultGraphControl!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }    
 }
