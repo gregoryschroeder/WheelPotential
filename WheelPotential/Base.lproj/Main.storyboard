@@ -281,11 +281,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5H-Tc-AWx">
-                                <rect key="frame" x="0.0" y="226" width="375" height="421"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5H-Tc-AWx">
+                                <rect key="frame" x="20" y="226" width="335" height="421"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examples from the bottom of the book pages will go here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-0n-XKr" userLabel="Steps Label">
-                                        <rect key="frame" x="20" y="0.0" width="335" height="41"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examples from the bottom of the book pages will go here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-0n-XKr" userLabel="Steps Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -293,23 +293,23 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="QS2-0n-XKr" secondAttribute="trailing" id="3xW-dk-nUc"/>
-                                    <constraint firstAttribute="bottom" secondItem="QS2-0n-XKr" secondAttribute="bottom" id="RJ1-9G-6X4"/>
-                                    <constraint firstItem="QS2-0n-XKr" firstAttribute="top" secondItem="l5H-Tc-AWx" secondAttribute="top" id="ZNS-9m-tfz"/>
+                                    <constraint firstItem="QS2-0n-XKr" firstAttribute="top" secondItem="l5H-Tc-AWx" secondAttribute="top" id="O9g-RZ-n2B"/>
+                                    <constraint firstItem="QS2-0n-XKr" firstAttribute="leading" secondItem="l5H-Tc-AWx" secondAttribute="leading" id="dBo-0i-ahW"/>
+                                    <constraint firstAttribute="bottom" secondItem="QS2-0n-XKr" secondAttribute="bottom" constant="20" id="h8k-Oo-V6j"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eTs-2w-kfV" firstAttribute="top" secondItem="Z3T-DY-KbX" secondAttribute="top" constant="20" id="0HN-9f-0ac"/>
-                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="trailing" secondItem="QS2-0n-XKr" secondAttribute="trailing" constant="20" id="75K-86-pu5"/>
+                            <constraint firstItem="QS2-0n-XKr" firstAttribute="trailing" secondItem="Z3T-DY-KbX" secondAttribute="trailing" constant="-20" id="75K-86-pu5"/>
+                            <constraint firstItem="QS2-0n-XKr" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="20" id="DcJ-Pb-1vy"/>
                             <constraint firstItem="eTs-2w-kfV" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="20" id="IUV-ic-rcm"/>
-                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="trailing" secondItem="eTs-2w-kfV" secondAttribute="trailing" constant="20" id="Ton-MN-cbA"/>
-                            <constraint firstItem="QS2-0n-XKr" firstAttribute="top" secondItem="eTs-2w-kfV" secondAttribute="bottom" constant="20" id="ZqT-5o-3we"/>
-                            <constraint firstItem="l5H-Tc-AWx" firstAttribute="top" secondItem="eTs-2w-kfV" secondAttribute="bottom" constant="20" id="ad3-lp-IvB"/>
-                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="trailing" secondItem="l5H-Tc-AWx" secondAttribute="trailing" id="bhW-0H-HMd"/>
-                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="bottom" secondItem="l5H-Tc-AWx" secondAttribute="bottom" constant="20" id="eWd-PK-4s7"/>
-                            <constraint firstItem="QS2-0n-XKr" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="20" id="ufu-cp-qYP"/>
-                            <constraint firstItem="l5H-Tc-AWx" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" id="z2Q-Fq-ATG"/>
+                            <constraint firstItem="eTs-2w-kfV" firstAttribute="trailing" secondItem="Z3T-DY-KbX" secondAttribute="trailing" constant="-20" id="Ton-MN-cbA"/>
+                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="bottom" secondItem="l5H-Tc-AWx" secondAttribute="bottom" constant="20" id="a3J-IP-G7K"/>
+                            <constraint firstItem="eTs-2w-kfV" firstAttribute="bottom" secondItem="l5H-Tc-AWx" secondAttribute="top" constant="-20" id="ad3-lp-IvB"/>
+                            <constraint firstItem="Z3T-DY-KbX" firstAttribute="trailing" secondItem="l5H-Tc-AWx" secondAttribute="trailing" constant="20" id="bhW-0H-HMd"/>
+                            <constraint firstItem="l5H-Tc-AWx" firstAttribute="leading" secondItem="Z3T-DY-KbX" secondAttribute="leading" constant="20" id="z2Q-Fq-ATG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3T-DY-KbX"/>
                     </view>
