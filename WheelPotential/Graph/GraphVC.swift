@@ -17,6 +17,7 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var AverageEmotionLabel: UILabel!
     @IBOutlet weak var AverageView: UIView!
     @IBOutlet weak var RestartButton: UIButton!
+    @IBOutlet weak var CountLabel: UILabel!
     
     let context = CoreDataStack.getContext()
     var results: [Results] = []
@@ -70,6 +71,8 @@ class GraphVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         AverageEmotionGraph.color = UIColor(hexString: "#\(Words(rawValue: averageEmotion)!.color)FF")!
         AverageEmotionGraph.fill = averageEmotion
         AverageEmotionLabel.text = Words(rawValue: averageEmotion)?.name
+        
+        CountLabel.text = "\(emotionSum) feelings recorded"
     }
     
     private func SetupRestartButton() {

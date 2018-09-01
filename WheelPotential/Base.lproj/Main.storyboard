@@ -39,19 +39,19 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-xK-qau" userLabel="Explanation Label">
                                         <rect key="frame" x="20" y="20" width="335" height="162.5"/>
-                                        <string key="text">The model will help you unite your thought and feeling at the same time. Most people believe that thought and feeling are separate actions. Actually, thought and feeling are assigned simultaneously and one cannot be without the other. The first step is to identify the thought by answering the question:</string>
+                                        <string key="text">Moods are important to track because they tell us how we’re thinking. Moods are a reflection of how we think. Track them long enough and determine what your average mood is over time and it will tell a story…your story! A story that you’re writing right now. What Is Your Average Mood Telling You?</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is keeping me up at night?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-no-N7T" userLabel="Question Label">
-                                        <rect key="frame" x="20" y="187.5" width="335" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What's on my mind?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-no-N7T" userLabel="Question Label">
+                                        <rect key="frame" x="20" y="187.5" width="335" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awake" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-hk-knA">
-                                        <rect key="frame" x="82" y="249.5" width="210" height="202"/>
+                                        <rect key="frame" x="82" y="219.5" width="210" height="202"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
@@ -61,12 +61,12 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalCompressionResistancePriority="749" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-za-voh" userLabel="Example Label">
-                                        <rect key="frame" x="20" y="456.5" width="335" height="81.5"/>
+                                        <rect key="frame" x="20" y="426.5" width="335" height="81.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
-                                        <string key="text">For example:
+                                        <string key="text">Examples only:
 "My weight is getting out of hand"
 "I'm stressed out at work"
 "I don't have enough money in the bank"</string>
@@ -103,7 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Identify Your Anxiety" id="g7w-Ek-QXJ">
-                        <barButtonItem key="leftBarButtonItem" title="About" id="jDA-AW-p4t">
+                        <barButtonItem key="leftBarButtonItem" title="Disclaimer" id="jDA-AW-p4t">
                             <connections>
                                 <segue destination="Cwp-AZ-F72" kind="popoverPresentation" popoverAnchorBarButtonItem="jDA-AW-p4t" id="9iz-2U-vsv">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -434,7 +434,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-ry-fbA">
-                                <rect key="frame" x="20" y="70" width="335" height="438"/>
+                                <rect key="frame" x="20" y="99" width="335" height="409"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="ResultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="85" id="mJi-Q2-sRe" customClass="ResultCell" customModule="WheelPotential" customModuleProvider="target">
@@ -545,6 +545,12 @@
                                     <constraint firstAttribute="trailing" secondItem="uE8-H6-VJp" secondAttribute="trailing" constant="2" id="o9H-JN-eVH"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X feelings recorded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iup-M7-fIO">
+                                <rect key="frame" x="113" y="70" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -552,13 +558,15 @@
                             <constraint firstItem="MwP-p5-KH5" firstAttribute="top" secondItem="BSj-ry-fbA" secondAttribute="bottom" constant="2" id="9lb-ez-hqD"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="top" secondItem="Btu-On-ega" secondAttribute="top" id="BgQ-lG-2Oq"/>
                             <constraint firstItem="MwP-p5-KH5" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="17" id="DjC-5Y-jUI"/>
+                            <constraint firstItem="Iup-M7-fIO" firstAttribute="centerX" secondItem="Btu-On-ega" secondAttribute="centerX" id="FUD-t6-TXs"/>
+                            <constraint firstItem="BSj-ry-fbA" firstAttribute="top" secondItem="Iup-M7-fIO" secondAttribute="bottom" constant="8" id="N86-zR-Gio"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="MwP-p5-KH5" secondAttribute="trailing" constant="17" id="Nyz-nx-zhv"/>
-                            <constraint firstItem="BSj-ry-fbA" firstAttribute="top" secondItem="ghs-CQ-jMa" secondAttribute="bottom" constant="8" id="Paf-Ye-Ebs"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="BSj-ry-fbA" secondAttribute="trailing" constant="20" id="Pan-EV-P37"/>
                             <constraint firstItem="ghs-CQ-jMa" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="ZRk-qR-cn4"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="bottom" secondItem="fi5-TD-pFc" secondAttribute="bottom" constant="20" id="amj-Xh-iKe"/>
                             <constraint firstItem="fi5-TD-pFc" firstAttribute="centerX" secondItem="Btu-On-ega" secondAttribute="centerX" id="fsK-ZC-Va7"/>
                             <constraint firstItem="BSj-ry-fbA" firstAttribute="leading" secondItem="Btu-On-ega" secondAttribute="leading" constant="20" id="mNv-j1-Bef"/>
+                            <constraint firstItem="Iup-M7-fIO" firstAttribute="top" secondItem="ghs-CQ-jMa" secondAttribute="bottom" constant="8" id="tMo-FC-3PR"/>
                             <constraint firstItem="Btu-On-ega" firstAttribute="trailing" secondItem="ghs-CQ-jMa" secondAttribute="trailing" constant="20" id="vhe-0J-413"/>
                             <constraint firstItem="fi5-TD-pFc" firstAttribute="top" secondItem="MwP-p5-KH5" secondAttribute="bottom" constant="2" id="zNN-Ih-159"/>
                         </constraints>
@@ -568,6 +576,7 @@
                         <outlet property="AverageEmotionGraph" destination="fbp-lM-FU9" id="dS9-cG-mTJ"/>
                         <outlet property="AverageEmotionLabel" destination="uE8-H6-VJp" id="l0A-6C-0Bn"/>
                         <outlet property="AverageView" destination="MwP-p5-KH5" id="ChM-H0-TS7"/>
+                        <outlet property="CountLabel" destination="Iup-M7-fIO" id="O2v-H7-zHA"/>
                         <outlet property="RestartButton" destination="fi5-TD-pFc" id="5BC-CJ-P2C"/>
                         <outlet property="myTableView" destination="BSj-ry-fbA" id="JdU-tT-L3N"/>
                     </connections>
