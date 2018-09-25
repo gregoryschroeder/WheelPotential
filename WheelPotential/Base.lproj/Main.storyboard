@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZh-mi-4NW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZh-mi-4NW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,13 +50,12 @@
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awake" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-hk-knA">
-                                        <rect key="frame" x="82" y="219.5" width="210" height="202"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-hk-knA">
+                                        <rect key="frame" x="20" y="219.5" width="335" height="202"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="210" id="DbQ-nD-jUE"/>
                                             <constraint firstAttribute="height" constant="202" id="P87-Pt-HNd"/>
                                         </constraints>
                                     </imageView>
@@ -96,9 +95,10 @@
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="ZTa-TQ-RvQ" secondAttribute="trailing" id="d4w-5i-lC6"/>
                             <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="kvM-xK-qau" secondAttribute="trailing" constant="20" id="deb-i3-Cpr"/>
                             <constraint firstItem="XeC-za-voh" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="edM-g0-NYW"/>
+                            <constraint firstItem="MKo-GX-4Z9" firstAttribute="trailing" secondItem="f3a-hk-knA" secondAttribute="trailing" constant="20" id="gnR-NY-AwE"/>
                             <constraint firstItem="kvM-xK-qau" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="kbs-BK-FpP"/>
                             <constraint firstItem="ZTa-TQ-RvQ" firstAttribute="top" secondItem="MKo-GX-4Z9" secondAttribute="top" id="mGe-nm-YoO"/>
-                            <constraint firstItem="f3a-hk-knA" firstAttribute="centerX" secondItem="MKo-GX-4Z9" secondAttribute="centerX" id="qld-ti-3Bu"/>
+                            <constraint firstItem="f3a-hk-knA" firstAttribute="leading" secondItem="MKo-GX-4Z9" secondAttribute="leading" constant="20" id="raQ-Jx-Xd1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MKo-GX-4Z9"/>
                     </view>
@@ -184,7 +184,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" rowHeight="43" id="vzE-cr-KEm" userLabel="Word Cell" customClass="WordCell" customModule="WheelPotential">
                                         <rect key="frame" x="0.0" y="28" width="343" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vzE-cr-KEm" id="3iA-Ta-X2m">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vzE-cr-KEm" id="3iA-Ta-X2m">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -346,7 +346,7 @@
                                 <rect key="frame" x="20" y="70" width="335" height="307.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="QuestionLabel" text="Did I get what I wanted?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-ME-T8q" userLabel="QuestionLabel">
-                                        <rect key="frame" x="21.5" y="0.0" width="292" height="107.5"/>
+                                        <rect key="frame" x="21.5" y="0.0" width="292.5" height="107.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -424,7 +424,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi5-TD-pFc">
-                                <rect key="frame" x="126" y="587" width="122" height="60"/>
+                                <rect key="frame" x="126.5" y="587" width="122" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -444,8 +444,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZgW-8s-yzr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="76.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZgW-8s-yzr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="111.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b5-d1-kNE" userLabel="Date Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -453,8 +453,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM" userLabel="Result Graph" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="20.5" width="300" height="15"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-1U-9yM" userLabel="Result Graph" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="20.5" width="300" height="50"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="count">
                                                                     <integer key="value" value="20"/>
@@ -464,14 +464,14 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xml-jd-h2J" userLabel="Emotion Label">
-                                                            <rect key="frame" x="0.0" y="35.5" width="335" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xml-jd-h2J" userLabel="Emotion Label">
+                                                            <rect key="frame" x="0.0" y="70.5" width="335" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did I get what I wanted?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-wP-8mX" userLabel="Response Label">
-                                                            <rect key="frame" x="0.0" y="56" width="335" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Did I get what I wanted?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-wP-8mX" userLabel="Response Label">
+                                                            <rect key="frame" x="0.0" y="91" width="335" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -522,10 +522,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbp-lM-FU9" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbp-lM-FU9" customClass="ResultGraphControl" customModule="WheelPotential" customModuleProvider="target">
                                         <rect key="frame" x="2" y="28" width="357" height="17"/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-H6-VJp" userLabel="Emotion Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-H6-VJp" userLabel="Emotion Label">
                                         <rect key="frame" x="2" y="47" width="337" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -587,6 +587,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Awake" width="210" height="202"/>
+        <image name="Intro" width="1280" height="720"/>
     </resources>
 </document>
